@@ -1,0 +1,179 @@
+/* Reset */
+
+fieldset,img { border: 0; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+
+* { 
+	margin:0;
+	padding:0;
+} 
+
+/* Fonts */
+
+@font-face {
+    font-family: 'albl';
+	src: url('fonts/TextbookNew-Regular.eot');
+	src: url('fonts/TextbookNew-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TextbookNew-Regular.woff') format('woff'),
+		url('fonts/TextbookNew-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'alr';
+	src: url('fonts/TextbookNew-Regular.eot');
+	src: url('fonts/TextbookNew-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TextbookNew-Regular.woff') format('woff'),
+		url('fonts/TextbookNew-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'alb';
+	src: url('fonts/TextbookNew-Regular.eot');
+	src: url('fonts/TextbookNew-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TextbookNew-Regular.woff') format('woff'),
+		url('fonts/TextbookNew-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Default */
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-family: alr;
+	font-size: 15px;
+	background-image: url('../images/bg-login.png');
+	background-size: cover;
+	color: #fff;
+}
+
+input, textarea {
+	font-family: alr;
+	font-size: 15px;	
+	outline: none;
+	color: #fff;
+}
+
+a {
+	font-family: alr;
+	font-size: 15px;
+	color: #1f3d7a;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-family: alr;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.clear { 
+	clear: both;
+}
+
+#login-form {
+	width: 300px;
+	height: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+}
+
+.logo {
+	background: url('../images/logo.png');
+	width: 87px;
+	height: 113px;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 39px;
+}
+
+#login-form input[type="text"], #login-form input[type="password"] {
+	background: none;
+	width: 100%;
+	height: 58px;
+	border: 1px #a78586 solid;
+	border-radius: 15px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.help-block-error {
+	line-height: 40px;
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 10px;
+}
+
+.jq-checkbox {
+	top: -2px;
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	margin: 0 4px 0 0;
+	border: 4px solid #fff;
+	cursor: pointer;
+	transition: all 0.1s;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+	width: 9px;
+	height: 9px;
+	background: #fff;
+	margin-left: 3px;
+	margin-top: 3px;
+	border-radius: 2px;
+}
+
+.jq-checkbox.disabled {
+	opacity: .55;
+}
+
+button[type="submit"] {
+	background: #ebbb6f;
+	border-radius: 15px;
+	height: 63px;
+	color: #2e2c36;
+	font-size: 23px;
+	width: 100%;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.4s;
+}
+
+button[type="submit"]:hover {
+	background: #f5b44d;
+	transition: all 0.2s;
+}
+
+.field-loginform-rememberme {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+input::-webkit-input-placeholder {color:#fff;}
+input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#fff;}
+
+#login-form .has-error input[type="text"], #login-form .has-error input[type="password"] {
+	border: 1px #fff solid;
+}

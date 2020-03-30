@@ -1,0 +1,47 @@
+{
+    "authors": [
+        {
+            "name": "toOx",
+            "email": "toijer@gmail.com"
+        }
+    ],    
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sfedosimov/yii2-daysago.git"
+        }
+    ],    
+    "name": "online",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.11",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "yiisoft/yii2-imagine": "~2.0.0",
+        "kartik-v/yii2-widget-depdrop": "@dev",
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "sfedosimov/yii2-daysago": "*",
+        "vova07/yii2-imperavi-widget": "~1.3.2",
+        "pheme/yii2-settings": "0.4"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "^2.0",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "php init --env=Development --overwrite=n"
+    }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikLC-Medium.woff2') format('woff2'),
+        url('fonts/GraphikLC-Medium.woff') format('woff'),
+        url('fonts/GraphikLC-Medium.ttf') format('truetype'),
+        url('fonts/GraphikLC-Medium.svg#GraphikLC-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikLC-Semibold.woff2') format('woff2'),
+        url('fonts/GraphikLC-Semibold.woff') format('woff'),
+        url('fonts/GraphikLC-Semibold.ttf') format('truetype'),
+        url('fonts/GraphikLC-Semibold.svg#GraphikLC-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikLC-Regular.woff2') format('woff2'),
+        url('fonts/GraphikLC-Regular.woff') format('woff'),
+        url('fonts/GraphikLC-Regular.ttf') format('truetype'),
+        url('fonts/GraphikLC-Regular.svg#GraphikLC-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikLC-Light.woff2') format('woff2'),
+        url('fonts/GraphikLC-Light.woff') format('woff'),
+        url('fonts/GraphikLC-Light.ttf') format('truetype'),
+        url('fonts/GraphikLC-Light.svg#GraphikLC-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
