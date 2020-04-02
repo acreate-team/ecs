@@ -12,10 +12,16 @@
             <div class="wrap">
                 <div class="row">
                     <div class="left">
-                        <?php if(file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/systems/'.$page->id.'.png')): ?><img src="/uploads/systems/<?=$page->id?>.png"><?php endif; ?>
+                        <div class="wrap-left">
+                            <div class="middle">
+                                <?php if(file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/systems/'.$page->id.'.png')): ?><img src="/uploads/systems/<?=$page->id?>.png"><?php endif; ?>
+                            </div>
+                        </div>
                     </div>
                     <div class="right">
-                        <?=$page->short_content?>
+                        <div class="wrap-right">
+                            <div class="middle"><?=$page->short_content?></div>
+                        </div>
                     </div>
                 </div>              
                 <div class="row bottom">

@@ -4,3 +4,5 @@ yii.bat
 test.php
 _b/
 vendor/
+admin/assets/
+/assets/

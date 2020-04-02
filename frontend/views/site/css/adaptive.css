@@ -19,6 +19,12 @@
 	}
 }
 
+@media (max-width:1550px){
+	.fancybox-searchBox .fancybox-content {
+		width: 80%;
+	}
+}
+
 @media (max-width:1850px){
 	.calendarWrap table td, .calendarWrap table td font {
 		/*font-size: 12px !important;*/
@@ -50,9 +56,38 @@
 		font-size: 17px;
 	}
 
+	.calendar_list_system .wrapList {
+		padding-left: 35px;
+		padding-right: 35px;		
+	}
+
 	.container {
 		padding-left: 35px;
 		padding-right: 35px;
+	}
+}
+
+@media (max-width:1200px){
+	.fancybox-searchBox .fancybox-content {
+		width: 80%;
+	}	
+
+	.fancybox-searchBox .fancybox-content table tr.head td:first-child, .fancybox-searchBox .fancybox-content table tr.head td:last-child,
+	.fancybox-searchBox .fancybox-content table tr.bottom td:first-child, .fancybox-searchBox .fancybox-content table tr.bottom td:last-child {
+		width: 40px !important;
+		min-width: 40px !important;
+	}
+
+	.fancybox-searchBox .fancybox-content {
+		width: 85%;
+	}
+
+	.fancybox-searchBox .fancybox-content .calendar_list-alphabet .head td, 
+	.fancybox-searchBox .fancybox-content .calendar_list-alphabet .bottom td, 
+	.fancybox-searchBox .fancybox-content .calendar_list-alphabet .row td:first-child, 
+	.fancybox-searchBox .fancybox-content .calendar_list-alphabet .row td:last-child, 
+	.fancybox-searchBox .fancybox-content .calendar_list-alphabet .row td a {
+		font-size: 12px !important;
 	}
 }
 
