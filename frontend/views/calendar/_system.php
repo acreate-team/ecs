@@ -27,7 +27,7 @@
                 <div class="row bottom">
                     <div class="left">
                         <div class="select format">
-                            <?php if($page->url != 'bogoakalnaya' && $page->url != 'shotoakalnaya'): ?>
+                            <?php if($page->url != 'bogoakalnaya' && $page->url != 'shotoakalnaya' && $page->url != 'denderskaya'): ?>
                             <div class="box">
                                 <div class="top">
                                     <span>форматы</span>
@@ -54,6 +54,38 @@
                                 </div>
                             </div>
                             <a href="/calendar/<?=$page->url?>" class="view">открыть <?=$page->name_calendar?></a>
+                            <?php elseif($page->url == 'denderskaya'): ?>
+                            <div class="box scrolled">
+                                <div class="top">
+                                    <a href="javascript:;" class="closeBox"></a>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="left">
+                                        <span>эры</span>
+                                        <ul>
+                                            <li><a href="#">от р.х.</a></li>
+                                            <li><a href="#">от ш.э.</a></li>
+                                            <li><a href="#">от с.м.</a></li>
+                                            <li><a href="#">от р.х.</a></li>
+                                            <li><a href="#">от ш.э.</a></li>
+                                            <li><a href="#">от с.м.</a></li>
+                                            <li><a href="#">от р.х.</a></li>
+                                            <li><a href="#">от ш.э.</a></li>
+                                            <li><a href="#">от с.м.</a></li>                                                                                        
+                                        </ul>
+                                    </div>
+                                    <div class="right">
+                                        <span>форматы</span>
+                                        <ul>
+                                            <li><a href="#">по вертикали</a></li>
+                                            <li><a href="#">по диагонали</a></li>
+                                            <li><a href="#">по горизонтали</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/calendar/<?=$page->url?>" class="view">открыть <?=$page->name_calendar?></a>                                
                             <?php else: ?>
                                 <div class="view">открытия нет</div>
                             <?php endif; ?>

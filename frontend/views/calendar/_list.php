@@ -116,7 +116,7 @@
 						$i = 0;
 						$m = 0; 
 					?>
-					<?php foreach ($page as $key => $p) : ?>
+					<?php foreach ($pageAlphabet as $key => $p) : ?>
 						<?php $i++; ?>
 						<?php if($i == 1): ?>
 							<tr class="row">

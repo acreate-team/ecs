@@ -37,6 +37,7 @@
 
             # Data
             $page = Page::find()->orderBy('numeric_calendar asc')->all();
+            $pageAlphabet = Page::find()->orderBy('name asc')->all();
             $pageOld = false;
 
             if(Yii::$app->session->getFlash('pageOld')) {
@@ -46,6 +47,7 @@
             return $this->render('_list', [
                 'title' => $this->view->title,
                 'page' => $page,
+                'pageAlphabet' => $pageAlphabet,
                 'pageOld' => $pageOld          
             ]);
         }

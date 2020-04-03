@@ -41,4 +41,20 @@ $(function() {
 		$('.menu_kot').click();
 		return false;
 	});	
+
+	function imageInit() {
+		var img = $('.calendar_system .item .wrap .row .left img');
+		var h = img.height();
+		if(h > 550) {
+			img.css({'height':'550px', 'min-width':'auto'});
+		} else {
+			img.css({'height':'auto', 'min-width':'100%'});
+		}
+	}
+
+	imageInit();
+
+	$(window).resize(function() {
+		imageInit();
+	});
 });	
