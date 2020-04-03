@@ -36,9 +36,11 @@
             $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);
 
             # Data
+            $pageOld = false;
+            $pageAlphabet = [];
+
             $page = Page::find()->orderBy('numeric_calendar asc')->all();
             $pageAlphabet = Page::find()->orderBy('name asc')->all();
-            $pageOld = false;
 
             if(Yii::$app->session->getFlash('pageOld')) {
                 $pageOld = Yii::$app->session->getFlash('pageOld');

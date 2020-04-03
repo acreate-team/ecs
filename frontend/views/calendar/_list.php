@@ -123,19 +123,13 @@
 								<?php $m++; $m_id = sprintf("%02d", $m); ?>
 								<td style="font-size: 22px"><?=$m_id?></td>
 						<?php endif; ?>
+						<?php if($i > 1) { $keyOut = $m+(25*($i-1))-1; } else { $keyOut = $m+$i-2; } ?>
 
 
-
-							<?php if(isset($match) && $p->match) : ?>
-							<td style="text-align: left; padding-left: 5px" class="match-q">
-								<a href="/system/ks-<?=$p->url?>" data-id="<?=$p->id?>" data-numeric="<?=$p->numeric_calendar?>" style="font-size: 18px">кс <?=str_replace('календарная система', '', $p->name)?></a>
-							</td>
-							<?php else: ?>
 							<td style="text-align: left; padding-left: 5px">
-								<a href="/system/ks-<?=$p->url?>" data-id="<?=$p->id?>" data-numeric="<?=$p->numeric_calendar?>" style="font-size: 18px">кс <?=str_replace('календарная система', '', $p->name)?></a>
+									<a href="/system/ks-<?=$pageAlphabet[$keyOut]->url?>" data-id="<?=$pageAlphabet[$keyOut]->id?>" data-numeric="<?=$pageAlphabet[$keyOut]->numeric_calendar?>" style="font-size: 18px">кс <?=str_replace('календарная система', '', $pageAlphabet[$keyOut]->name)?></a>
 							</td>
-							<?php endif; ?>
-
+				
 
 
 						<?php if($i == 5): ?>
