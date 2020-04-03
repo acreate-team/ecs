@@ -10,8 +10,8 @@
     use app\models\Page;
 
     use frontend\assets\JUIAsset;
-    use frontend\assets\CalendarAsset;
-    use frontend\assets\CalendarBosAsset;
+    use frontend\assets\CalendarListAsset;
+    use frontend\assets\CalendarSystemAsset;
 
     class CalendarController extends Controller
     {
@@ -28,7 +28,7 @@
 
         public function actionList() {
             JUIAsset::register(Yii::$app->view);
-            CalendarBosAsset::register(Yii::$app->view);
+            CalendarListAsset::register(Yii::$app->view);
 
             $this->view->title = 'ККС';
 
@@ -50,138 +50,9 @@
             ]);
         }
 
-        public function actionListProfile() {
-            if(Yii::$app->user->isGuest) {
-                return $this->redirect(['user/login-list']);
-            }
-
-            JUIAsset::register(Yii::$app->view);
-            CalendarBosAsset::register(Yii::$app->view);
-
-            $this->view->title = 'ККС';
-
-            $this->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('app.keywords')]);
-            $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);
-
-            # Data
-            $page = Page::find()->orderBy('numeric_calendar asc')->all();
-            $pageOld = false;
-
-            if(Yii::$app->session->getFlash('pageOld')) {
-                $pageOld = Yii::$app->session->getFlash('pageOld');
-            }
-
-            return $this->render('_listProfile', [
-                'title' => $this->view->title,
-                'page' => $page,
-                'pageOld' => $pageOld          
-            ]);
-        }
-
-        public function actionListAlphabet() {
-            CalendarBosAsset::register(Yii::$app->view);
-
-            $this->view->title = 'ККС';
-
-            $this->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('app.keywords')]);
-            $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);
-
-            # Data
-            $page = Page::find()->orderBy('numeric_calendar asc')->all();
-            $pageOld = false;
-
-            if(Yii::$app->session->getFlash('pageOld')) {
-                $pageOld = Yii::$app->session->getFlash('pageOld');
-            }
-
-            if(Yii::$app->request->get('q')) {
-                $q = Yii::$app->request->get('q');
-                $match = Page::find()->where('name LIKE "%'.$q.'%"')->all();
-
-                foreach ($page as $p) {
-                    foreach ($match as $m) {
-                        if($p->id == $m->id) {
-                            $p->match = true;
-                        }
-                    }
-                }
-
-                return $this->render('_listAlphabet', [
-                    'title' => $this->view->title,
-                    'page' => $page,
-                    'pageOld' => $pageOld,
-                    'match' => $match,
-                    'q' => Yii::$app->request->get('q')
-                ]);                
-            } else {
-                return $this->render('_listAlphabet', [
-                    'title' => $this->view->title,
-                    'page' => $page,
-                    'pageOld' => $pageOld
-                ]);
-            }
-        }
-
-        public function actionListNumeric() {
-            CalendarBosAsset::register(Yii::$app->view);
-
-            $this->view->title = 'ККС';
-
-            $this->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('app.keywords')]);
-            $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);
-
-            # Data
-            $page = Page::find()->orderBy('numeric_calendar asc')->all();
-            $pageOld = false;
-
-            if(Yii::$app->session->getFlash('pageOld')) {
-                $pageOld = Yii::$app->session->getFlash('pageOld');
-            }
-
-            if(Yii::$app->request->get('q')) {
-                $q = Yii::$app->request->get('q');
-                $q = intval($q);
-                $match = Page::find()->where('numeric_calendar LIKE "'.$q.'"')->all();
-
-                foreach ($page as $p) {
-                    foreach ($match as $m) {
-                        if($p->id == $m->id) {
-                            $p->match = true;
-                        }
-                    }
-                }
-
-                return $this->render('_listNumeric', [
-                    'title' => $this->view->title,
-                    'page' => $page,
-                    'pageOld' => $pageOld,
-                    'match' => $match,
-                    'q' => Yii::$app->request->get('q')
-                ]);                
-            } else {
-                return $this->render('_listNumeric', [
-                    'title' => $this->view->title,
-                    'page' => $page,
-                    'pageOld' => $pageOld
-                ]);
-            }
-        }
-
-        public function actionSystems() {
-            $this->view->title = 'БОС';
-
-            $this->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('app.keywords')]);
-            $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);
-
-            $pages = Page::find()->all();
-
-            return $this->render('_systems', [
-                'title' => $this->view->title,
-                'pages' => $pages               
-            ]);
-        }
-
         public function actionSystem() {
+            CalendarSystemAsset::register(Yii::$app->view);
+
             $page = Page::find()->where(['url' => Yii::$app->request->get('url')])->one();
             $this->view->title = $page->name;
 
@@ -206,6 +77,8 @@
         }
 
         public function actionSystemHistory() {
+            CalendarSystemAsset::register(Yii::$app->view);
+
             $page = Page::find()->where(['url' => Yii::$app->request->get('url')])->one();
             $this->view->title = $page->name;
 
@@ -230,6 +103,8 @@
         }
 
         public function actionSystemStructure() {
+            CalendarSystemAsset::register(Yii::$app->view);
+
             $page = Page::find()->where(['url' => Yii::$app->request->get('url')])->one();
             $this->view->title = $page->name;
 
@@ -254,6 +129,8 @@
         }
 
         public function actionSystemActual() {
+            CalendarSystemAsset::register(Yii::$app->view);
+            
             $page = Page::find()->where(['url' => Yii::$app->request->get('url')])->one();
             $this->view->title = $page->name;
 
@@ -277,9 +154,7 @@
             ]);
         }
 
-        public function actionView() {
-            CalendarAsset::register(Yii::$app->view);
-            
+        public function actionView() {     
             $this->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('app.keywords')]);
             $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);     
 
@@ -287,13 +162,13 @@
 
             if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
                 $this->view->title = 'ГКС';
-                $page = 'gks';
+                $page = 'list/gs/gks';
             } elseif(Yii::$app->request->get('url') == 'gs-sheteanskaya') {
                 $this->view->title = 'ШКС';
-                $page = 'shks';
+                $page = 'list/gs/shks';
             } elseif(Yii::$app->request->get('url') == 'gs-moiseanskaya') {
                 $this->view->title = 'МКС';
-                $page = 'mks';                
+                $page = 'list/gs/mks';             
             }
 
             if(!$page) {

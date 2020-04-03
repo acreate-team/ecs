@@ -6,3 +6,6 @@ _b/
 vendor/
 admin/assets/
 /assets/
+_old
+.sass-cache/
+console/

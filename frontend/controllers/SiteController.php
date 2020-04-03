@@ -9,6 +9,8 @@
     
     use app\models\Page;
 
+    use frontend\assets\BannerAsset;
+
     class SiteController extends Controller
     {
         public function actions()
@@ -22,6 +24,7 @@
 
         public function actionIndex()
         {
+            BannerAsset::register(Yii::$app->view);
             $this->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('app.keywords')]);
             $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);            
             return $this->render('home');

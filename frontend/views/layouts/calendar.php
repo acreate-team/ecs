@@ -2,11 +2,13 @@
 
     use yii\helpers\Html;
     use frontend\assets\AppAsset;
+    use frontend\assets\CalendarMainAsset;
 
     $controller = Yii::$app->controller->id;
     $route = $controller.'.'.Yii::$app->controller->action->id;
 
     AppAsset::register($this);
+    CalendarMainAsset::register($this);
     $this->registerJsFile('/frontend/views/site/js/jquery.js', ['position' => $this::POS_HEAD]);
 
     $settings = Yii::$app->settings;
@@ -30,20 +32,6 @@
     <div id="wrapper">
         <?=$content?>      
     </div>
-
-    <nav id="context-menu" class="context-menu">
-        <ul class="context-menu__items">
-            <li class="context-menu__item">
-                <a href="/calendar/gs-grigorianskaya" class="context-menu__link">календарь активный</a>
-            </li>
-            <li class="context-menu__item">
-                <a href="/calendar/gs-sheteanskaya" class="context-menu__link">календарь альтернативный</a>
-            </li>
-            <li class="context-menu__item">
-                <a href="/calendar/gs-moiseanskaya" class="context-menu__link">календарь потребный</a>
-            </li>
-        </ul>
-    </nav>    
 
 <?php $this->endBody() ?>
 </body>

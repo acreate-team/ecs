@@ -1,0 +1,202 @@
+#content.page .container {
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#headerCalendar {
+  display: table-row;
+  background: #D9D8D9;
+  height: 60px;
+  color: #002063;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  .left, .center, .right {
+    display: table-cell;
+  }
+
+  .left, .right {
+    width: 1%;
+    white-space: nowrap;
+  }
+
+  .center {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .prev a, .next a, .bottom a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 5.5px;
+  }
+
+  .logo_list a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 5.5px;
+  }
+
+  .prev a {
+    background: url('../images/prev.svg');
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+  }
+
+  .next a {
+    background: url('../images/next.svg');
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    float: right;
+  }
+
+  .bottom a {
+    background: url('../images/bottom.png');
+    background-size: 35px 35px;
+  }
+
+  .logo_list a {
+    background-image: url('../images/logo_list.png');
+    background-size: 35px 35px;
+  }  
+}
+
+#footerCalendar {
+  display: table-row;
+  height: 60px;
+  background: #002060;
+  color: #fff;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  .left, .center, .right {
+    display: table-cell;
+  }
+
+  .left, .right {
+    width: 1%;
+    white-space: nowrap;
+  }
+
+  .left.toList a {
+    display: block;
+    position: relative;
+    top: 7px;
+  }
+
+  .center {
+    text-align: center;
+    padding-top: 21px;
+  }    
+
+  .logo a {
+    display: table;
+    float: right;
+    background: url('../images/logo.png');
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    position: relative;
+    top: 6.5px;
+  }
+
+  .fullSize a {
+    display: table;
+    float: right;
+    background: url('../images/maximize.png');
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    position: relative;
+    top: 6.5px;
+
+    &.active {
+      background: url('../images/minimize.png');
+      background-size: 35px 35px;
+    }
+  }
+
+  .top a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 5.5px;
+    background: url('../images/top.png');
+    background-size: 35px 35px;    
+  }
+}
+
+#headerCalendar .left, #footerCalendar .left {
+  font-weight: bold;
+}
+
+.calendar_listWrap, .calendarWrap, .calendar_list_system .wrapList {
+  padding: 35px;
+}
+
+.calendar td.active {
+  box-shadow: inset 0 0 0 2.5px rgba(0, 0, 0, 0);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 3px rgba(0, 0, 0, 0) solid;
+    -webkit-transition: border 5s;
+    -o-transition: border 5s;
+    transition: border 5s;
+  }
+
+  &.c1:before {
+    border: 3px #fff solid;
+  }
+
+  &.c2:before {
+    border: 3px #CC0000 solid;
+  }
+
+  &.c3:before {
+    border: 3px #FFC600 solid;
+  }
+
+  &.c4:before {
+    border: 3px #FFFF00 solid;
+  }
+
+  &.c5:before {
+    border: 3px #00B552 solid;
+  }
+
+  &.c6:before {
+    border: 3px #00B5F7 solid;
+  }
+
+  &.c7:before {
+    border: 3px #0073C6 solid;
+  }
+
+  &.c8:before {
+    border: 3px #002163 solid;
+  }
+
+  &.c9:before {
+    border: 3px #000000 solid;
+  }
+}

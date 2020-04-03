@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* line 1, ../sass/calendar.list.scss */
+.calendar_list {
+  /*алфавитика*/
+}
+/* line 2, ../sass/calendar.list.scss */
+.calendar_list .linkBox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 10, ../sass/calendar.list.scss */
+.calendar_list table {
+  width: 100%;
+  border-spacing: 0;
+  border: 2px #000 solid;
+}
+/* line 15, ../sass/calendar.list.scss */
+.calendar_list table td {
+  border-right: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 21, ../sass/calendar.list.scss */
+.calendar_list table td:last-child {
+  border-right: 0;
+}
+/* line 25, ../sass/calendar.list.scss */
+.calendar_list table td img {
+  max-width: 100px;
+  max-height: 100px;
+  display: table;
+  margin: auto;
+}
+/* line 32, ../sass/calendar.list.scss */
+.calendar_list table td .image {
+  min-height: 100px;
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 41, ../sass/calendar.list.scss */
+.calendar_list table tr.head td:first-child, .calendar_list table tr.head td:last-child, .calendar_list table tr.bottom td:first-child, .calendar_list table tr.bottom td:last-child {
+  width: 75px;
+  min-width: 75px;
+}
+/* line 48, ../sass/calendar.list.scss */
+.calendar_list table tr:last-child td {
+  border-bottom: 0;
+}
+/* line 52, ../sass/calendar.list.scss */
+.calendar_list table .row td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+/* line 56, ../sass/calendar.list.scss */
+.calendar_list table .row td:first-child, .calendar_list table .row td:last-child {
+  font-family: Times New Roman;
+  font-size: 36px;
+  color: #002063;
+  font-weight: bold;
+}
+/* line 63, ../sass/calendar.list.scss */
+.calendar_list table .row td a {
+  text-decoration: none;
+}
+/* line 67, ../sass/calendar.list.scss */
+.calendar_list table .row td span {
+  display: table;
+  margin: auto;
+  font-family: Times New Roman;
+  font-size: 26px;
+  color: #000;
+  margin-top: 10px;
+}
+/* line 77, ../sass/calendar.list.scss */
+.calendar_list table .head td {
+  font-family: Times New Roman;
+  font-weight: bold;
+  font-size: 36px;
+  color: #002063;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 0;
+}
+/* line 86, ../sass/calendar.list.scss */
+.calendar_list table .head td:first-child, .calendar_list table .head td:last-child {
+  background: #00B14F;
+}
+/* line 91, ../sass/calendar.list.scss */
+.calendar_list table .bottom td {
+  font-family: Times New Roman;
+  font-weight: bold;
+  font-size: 36px;
+  color: #002063;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 0;
+}
+/* line 100, ../sass/calendar.list.scss */
+.calendar_list table .bottom td:first-child, .calendar_list table .bottom td:last-child {
+  background: #00B14F;
+}
+/* line 106, ../sass/calendar.list.scss */
+.calendar_list .list_scroll {
+  overflow-y: scroll;
+}
+/* line 109, ../sass/calendar.list.scss */
+.calendar_list .list_scroll tr td:last-child, .calendar_list .list_scroll tr td:first-child {
+  width: 75px;
+  min-width: 75px;
+}
+/* line 114, ../sass/calendar.list.scss */
+.calendar_list .list_scroll table {
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 119, ../sass/calendar.list.scss */
+.calendar_list .list_scroll tr td:first-child {
+  width: 75px;
+  min-width: 75px;
+}
+/* line 125, ../sass/calendar.list.scss */
+.calendar_list .list_bottom {
+  position: relative;
+  top: -2px;
+}
+/* line 130, ../sass/calendar.list.scss */
+.calendar_list ::-webkit-scrollbar {
+  display: none;
+}
+/* line 135, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet {
+  font-family: 'Graphik' !important;
+  font-size: 14px !important;
+}
+/* line 139, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .head td, .calendar_list .calendar_list-alphabet .bottom td {
+  font-family: 'Graphik' !important;
+  font-size: 13px !important;
+  font-weight: normal !important;
+}
+/* line 145, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .row td {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+/* line 149, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .row td:first-child, .calendar_list .calendar_list-alphabet .row td:last-child, .calendar_list .calendar_list-alphabet .row td a {
+  font-family: 'Graphik' !important;
+  font-size: 13px !important;
+  font-weight: normal !important;
+}
+/* line 156, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .head td, .calendar_list .calendar_list-alphabet .bottom td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 161, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet table td {
+  border-right: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 167, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet table td:nth-child(2), .calendar_list .calendar_list-alphabet table td:nth-child(3), .calendar_list .calendar_list-alphabet table td:nth-child(4), .calendar_list .calendar_list-alphabet table td:nth-child(5), .calendar_list .calendar_list-alphabet table td:nth-child(6) {
+  width: 20%;
+}
+/* line 172, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .bottom td {
+  border-top: 1px #000 solid;
+}
+/* line 176, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .head td {
+  border-bottom: 2px #000 solid;
+}
+/* line 181, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet table tr.head td:first-child, .calendar_list .calendar_list-alphabet table tr.head td:last-child, .calendar_list .calendar_list-alphabet table tr.bottom td:first-child, .calendar_list .calendar_list-alphabet table tr.bottom td:last-child {
+  width: 45px;
+  min-width: 45px;
+}
+/* line 187, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet table tr.head td:first-child, .calendar_list .calendar_list-alphabet table tr.bottom td:first-child, .calendar_list .calendar_list-alphabet table tr.row td:first-child {
+  border-right: 2px #000 solid;
+  background-color: #FCD5B4;
+  color: #000;
+}
+/* line 193, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet table tr.head td:last-child, .calendar_list .calendar_list-alphabet table tr.bottom td:last-child, .calendar_list .calendar_list-alphabet table tr.row td:last-child {
+  border-left: 1px #000 solid;
+  background-color: #FCD5B4;
+  color: #000;
+}
+/* line 200, ../sass/calendar.list.scss */
+.calendar_list .calendar_list-alphabet .head td, .calendar_list .calendar_list-alphabet .bottom td {
+  color: #000;
+}
+
+/* line 206, ../sass/calendar.list.scss */
+#searchAlphabet {
+  display: none;
+}
+
+/* line 211, ../sass/calendar.list.scss */
+.fancybox-searchBox .fancybox-bg {
+  background: #fff;
+}
+/* line 215, ../sass/calendar.list.scss */
+.fancybox-searchBox.fancybox-is-open .fancybox-bg {
+  opacity: 0;
+}
+/* line 219, ../sass/calendar.list.scss */
+.fancybox-searchBox .fancybox-content {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+  width: 60%;
+}
+/* line 224, ../sass/calendar.list.scss */
+.fancybox-searchBox .calendar_list-alphabet {
+  padding: 0;
+}
