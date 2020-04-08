@@ -839,7 +839,7 @@ td
 	{mso-style-parent:style0;
 	text-align:center;
 	vertical-align:middle;
-	border-top:1.0pt solid windowtext;
+	border-top:2.0pt solid windowtext;
 	border-right:none;
 	border-bottom:1.0pt solid windowtext;
 	border-left:1.0pt solid windowtext;
@@ -2145,3 +2145,8 @@ td.border-bold {
   top: 180px;
 }
 
+.linePlace {
+	background: rgba(0,155,15,0);
+	position: absolute;	
+	overflow: hidden;
+}

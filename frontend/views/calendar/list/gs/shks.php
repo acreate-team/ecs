@@ -18,18 +18,6 @@
 
 <div class="calendarWrap shks">
 
-     <div class="line1_1"></div>
-     <div class="line1_2"></div>
-     <div class="line1_3"></div>
-     <div class="line1_4"></div>
-     <div class="line1_5"></div>
-     <div class="line1_6"></div>
-     <div class="line1_7"></div>
-     <div class="line1_8"></div>          
-     <div class="line3"></div>
-     <div class="line4_1"></div>
-     <div class="line4_2"></div>
-
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;table-layout:fixed;min-width: 1720px;">
          <tbody>
             <tr height="18" style="height:13.5pt" class="border-bold">
@@ -2250,7 +2238,8 @@
             <tr height="15" style="height:11.25pt">
                <td height="15" colspan="54" class="xl95" style="height:11.25pt;mso-ignore:colspan; border-top: 0"></td>
             </tr>
-            <tr height="18" style="height:13.5pt">
+
+           <tr height="18" style="height:13.5pt">
                <td colspan="2" height="18" class="xl136 border-bold" style="border-left:2.0pt solid black; border-right:1.0pt solid black;
                   height:13.5pt">календа</td>
                <td colspan="4" class="xl138" style="border-right:1.0pt solid black; border-left:2.0pt solid black; border-bottom:2.0pt solid black; border-right:2.0pt solid black;">календарный блок</td>
@@ -2288,57 +2277,57 @@
                <td class="xl144" style="border-top:none;border-left: 1pt solid black;border-right:2.0pt solid black;border-bottom:2.0pt solid black;">з</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl136 border-mr border-bold" style="/* border-right:1.0pt solid black */">сез №</td>
-               <td class="xl141 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">в</td>
-               <td class="xl142 border-mr border-bold" style="border-top:none;border-left: 0;border-right: 1px #000 solid;">л</td>
-               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">о</td>
+               <td class="xl141 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">в</td>
+               <td class="xl142 border-mr border-bold" style="border-top:none;border-left: 0;border-right: 1pt #000 solid;">л</td>
+               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">о</td>
                <td class="xl144 border-mr border-bold" style="border-top:none;border-left: 0;">з</td>
-               <td class="xl141 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left:none;">в</td>
-               <td class="xl142 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left: 0;">л</td>
-               <td class="xl143 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left:none;">о</td>
+               <td class="xl141 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left:none;">в</td>
+               <td class="xl142 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left: 0;">л</td>
+               <td class="xl143 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left:none;">о</td>
                <td class="xl144 border-mr border-bold" style="border-top:none;border-left: 0;">з</td>
-               <td class="xl141 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">в</td>
-               <td class="xl142 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left: 1px #000 solid;">л</td>
-               <td class="xl143 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">о</td>
-               <td class="xl144 border-mr border-bold" style="border-top:none;border-left: 1px #000 solid;">з</td>
-               <td class="xl141 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">в</td>
-               <td class="xl142 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left: 1px #000 solid;">л</td>
-               <td class="xl143 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">о</td>
-               <td class="xl144 border-mr border-bold" style="border-top:none;border-left: 1px #000 solid;">з</td>
+               <td class="xl141 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">в</td>
+               <td class="xl142 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left: 1pt #000 solid;">л</td>
+               <td class="xl143 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">о</td>
+               <td class="xl144 border-mr border-bold" style="border-top:none;border-left: 1pt #000 solid;">з</td>
+               <td class="xl141 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">в</td>
+               <td class="xl142 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left: 1pt #000 solid;">л</td>
+               <td class="xl143 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">о</td>
+               <td class="xl144 border-mr border-bold" style="border-top:none;border-left: 1pt #000 solid;">з</td>
                <td class="xl146 border-bold border-mr" style="border-top:none;border-left:none;">"7"</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
                <td colspan="2" class="xl136 border-mr border-bold" style="border-right:1.0pt solid black">сез №</td>
-               <td class="xl147  border-mr border-bold" style="border-top:none;/* border-left:none */border-right: 1px #000 solid;">в</td>
-               <td class="xl148 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left: 0;">л</td>
-               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;border-left: 0;">о</td>
+               <td class="xl147  border-mr border-bold" style="border-top:none;/* border-left:none */border-right: 1pt #000 solid;">в</td>
+               <td class="xl148 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left: 0;">л</td>
+               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;border-left: 0;">о</td>
                <td class="xl149 border-mr border-bold" style="border-top:none;border-left: 0;">з</td>
-               <td class="xl147 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">в</td>
-               <td class="xl148 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left: 0;">л</td>
-               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">о</td>
-               <td class="xl149 border-mr border-bold" style="border-left: 0;border-top:none;border-right: 2px #000 solid;">з</td>
-               <td class="xl147 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">в</td>
-               <td class="xl148 border-mr border-bold" style="border-top:none;border-right: 1px #000 solid;border-left: 0;">л</td>
-               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">о</td>
+               <td class="xl147 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">в</td>
+               <td class="xl148 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left: 0;">л</td>
+               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">о</td>
+               <td class="xl149 border-mr border-bold" style="border-left: 0;border-top:none;border-right: 2pt #000 solid;">з</td>
+               <td class="xl147 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">в</td>
+               <td class="xl148 border-mr border-bold" style="border-top:none;border-right: 1pt #000 solid;border-left: 0;">л</td>
+               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">о</td>
                <td class="xl149 border-mr border-bold" style="border-top:none;border-left: 0;">з</td>
-               <td class="xl147 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">в</td>
-               <td class="xl148 border-mr border-bold" style="border-top:none;border-left: 0;border-right: 1px #000 solid;">л</td>
-               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1px #000 solid;">о</td>
+               <td class="xl147 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">в</td>
+               <td class="xl148 border-mr border-bold" style="border-top:none;border-left: 0;border-right: 1pt #000 solid;">л</td>
+               <td class="xl145 border-mr border-bold" style="border-top:none;border-left:none;border-right: 1pt #000 solid;">о</td>
                <td class="xl149 border-mr border-bold" style="border-top:none;border-left: 0;">з</td>
                <td class="xl146 border-mr border-bold" style="border-top:none;/* border-left:none */">"7"</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl100" style="border-right:1pt solid black;border-left: 2px #000 solid;border-bottom: 2px #000 solid;">5 +
+               <td colspan="2" class="xl100" style="border-right:1pt solid black;border-left: 2pt #000 solid;border-bottom: 2pt #000 solid;">5 +
                   "2"
                </td>
                <td colspan="2" class="xl68" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px solid black;
+                  border-bottom: 2pt solid black;
                   ">7</td>
                <td colspan="2" class="xl68" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">4 + "3"</td>
             </tr>
             <tr height="17" style="height:12.75pt">
@@ -2349,7 +2338,7 @@
                </td>
                <td class="xl152" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl153" style="border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl153" style="border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl150 border-mr" style="/* border-right:1.0pt solid black */">пн</td>
                <td align="left" class="xl117" valign="top">                  
@@ -2357,22 +2346,22 @@
                </td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl154" style="border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl154" style="border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl117" style="border-top:none">0365</td>
                <td class="xl129" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl129" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl131" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl71">0729</td>
                <td class="xl152" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl154" style="border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl154" style="border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl117">1093</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
                <td class="xl153" style="border-left:none">&nbsp;</td>
-               <td class="xl156 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1457</td>
+               <td class="xl156 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1pt #000 solid;">1457</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl150  border-mr border-bold" style="/* border-right:1.0pt solid black; */">пн</td>
+               <td colspan="2" class="xl150  border-mr" style="">пн</td>
                <td align="left" valign="top" class="xl117">
                   <span style="
                      mso-ignore:vglayout;
@@ -2384,22 +2373,22 @@
                </td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl154" style="border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl154" style="border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl117" style="border-top:none">0365</td>
                <td class="xl129" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl129" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl131" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl71">0729</td>
                <td class="xl152" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl154" style="border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl154" style="border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl155">1093</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
                <td class="xl73" style="border-left:none">&nbsp;</td>
                <td class="xl153" style="border-left:none">&nbsp;</td>
-               <td class="xl157 border-mr border-bold" style="/* border-left:none */border-bottom: 1px #000 solid;">1457</td>
+               <td class="xl157 border-mr border-bold" style="/* border-left:none */border-bottom: 1pt #000 solid;">1457</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl158" style="border-right:1pt solid black;border-left: 2px #000 solid;">1457</td>
+               <td colspan="2" class="xl158" style="border-right:1pt solid black;border-left: 2pt #000 solid;">1457</td>
                <td colspan="2" class="xl160" style="border-right:1pt solid black;border-left:
                   none">пн</td>
                <td colspan="2" class="xl162" style="
@@ -2414,49 +2403,49 @@
                   height:12.75pt;
                   ">вт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
-               <td class="xl118 start-line-3" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="startLine-1" class="xl118" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-1" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">вт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
-               <td class="xl79 start-line-4_1" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
-               <td class="xl167" style="border-top:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
-               <td class="xl133" style="border-top:none">&nbsp;</td>
-               <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
-               <td class="xl168" style="border-top:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1458</td>
+               <td id="startLine-2" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-2" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-3" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;position: relative;">&nbsp;</td>
+               <td id="endLine-3" class="xl167" style="border-top:none">&nbsp;</td>
+               <td id="startLine-4" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-4" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="startLine-5" class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;position: relative;">&nbsp;</td>
+               <td id="endLine-5" class="xl133" style="border-top:none">&nbsp;</td>
+               <td id="startLine-6" class="xl118" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-6" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-7" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;position: relative;">&nbsp;</td>
+               <td id="endLine-7" class="xl168" style="border-top:none">&nbsp;</td>
+               <td id="startLine-8" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-8" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-9" class="xl105" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-9" class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1pt #000 solid;">1458</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl164 border-mr border-bold" style="/* border-right:1.0pt solid black */">вт</td>
+               <td colspan="2" class="xl164 border-mr" style="">вт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
-               <td class="xl79 start-line-4_2" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
-               <td class="xl167" style="border-top:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
-               <td class="xl133" style="border-top:none">&nbsp;</td>
-               <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
-               <td class="xl168" style="border-top:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1458</td>
+               <td id="startLine-10" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-10" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-11" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;position: relative;">&nbsp;</td>
+               <td id="endLine-11" class="xl167" style="border-top:none">&nbsp;</td>
+               <td id="startLine-12" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-12" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-13" class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;position: relative;">&nbsp;</td>
+               <td id="endLine-13" class="xl133" style="border-top:none">&nbsp;</td>
+               <td id="startLine-14" class="xl118" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-14" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-15" class="xl120" style="border-top:none;border-left:none;position: relative;border-right: 2pt #000 solid;">&nbsp;</td>
+               <td id="endLine-15" class="xl168" style="border-top:none">&nbsp;</td>
+               <td id="startLine-16" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-16" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-17" class="xl105" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-17" class="xl169 border-mr" style="border-top:none;border-bottom: 1pt #000 solid;">1458</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2px #000 solid;">1458</td>
+               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2pt #000 solid;">1458</td>
                <td colspan="2" class="xl82" style="border-right:1pt solid black;border-left:
                   none">вт</td>
                <td colspan="2" class="xl172" style="
@@ -2473,47 +2462,47 @@
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">ср</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1459</td>
+               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1pt #000 solid;">1459</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl164 border-mr border-bold" style="/* border-right:1.0pt solid black */">ср</td>
+               <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">ср</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1459</td>
+               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1pt #000 solid;">1459</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2px #000 solid;">1459</td>
+               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2pt #000 solid;">1459</td>
                <td colspan="2" class="xl82" style="border-right:1pt solid black;border-left:
                   none">ср</td>
                <td colspan="2" class="xl172" style="
@@ -2530,47 +2519,47 @@
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">чт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1460</td>
+               <td class="xl169 border-mr" style="">1460</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl164 border-mr border-bold" style="/* border-right:1.0pt solid black */">чт</td>
+               <td colspan="2" class="xl164 border-mr" style="">чт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1px #000 solid;">1460</td>
+               <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 1pt #000 solid;">1460</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2px #000 solid;">1460</td>
+               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2pt #000 solid;">1460</td>
                <td colspan="2" class="xl82" style="border-right:1pt solid black;border-left:
                   none">чт</td>
                <td colspan="2" class="xl172" style="
@@ -2587,47 +2576,47 @@
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">пт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl169 border-mr border-bold" style="border-top:none;/* border-left:none */border-bottom: 0px #000 solid;">1461</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl164 border-mr border-bold" style="/* border-right:1.0pt solid black */">пт</td>
+               <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">пт</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl174 border-mr border-bold" style="/* border-left:none */border-bottom: 1px #000 solid;border-top: 1px #000 solid;">0000</td>
+               <td class="xl174 border-mr border-bold" style="/* border-left:none */border-bottom: 1pt #000 solid;border-top: 1pt #000 solid;">0000</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2px #000 solid;">1461</td>
+               <td colspan="2" class="xl170" style="border-right:1pt solid black;border-left: 2pt #000 solid;">1461</td>
                <td colspan="2" class="xl82" style="border-right:1pt solid black;border-left:
                   none">пт</td>
                <td colspan="2" class="xl175" style="
@@ -2642,49 +2631,49 @@
                   height:12.75pt;
                   ">сб</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
-               <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-1" class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79 end-line-3" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">сб</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-2" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="bottomLine-3" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-4" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="bottomLine-5" class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
-               <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-6" class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="bottomLine-7" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-8" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105 end-line-4_1" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl174 border-mr border-bold" style="/* border-left:none */border-top: 1px #000 solid;border-bottom: 1px #000 solid;">0000</td>
+               <td id="bottomLine-9" class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
+               <td class="xl174 border-mr border-bold" style="/* border-left:none */border-top: 1pt #000 solid;border-bottom: 1pt #000 solid;">0000</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl164 border-mr border-bold" style="/* border-right:1.0pt solid black */">сб</td>
+               <td colspan="2" class="xl164 border-mr" style="/* border-right:1.0pt solid black */">сб</td>
                <td class="xl166" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-10" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="bottomLine-11" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl167" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-12" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="bottomLine-13" class="xl105" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
-               <td class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-14" class="xl118" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl120" style="border-top:none;border-left:none;border-right: 2px #000 solid;">&nbsp;</td>
+               <td id="bottomLine-15" class="xl120" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">&nbsp;</td>
                <td class="xl168" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-16" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl105 end-line-4_2" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl174 border-mr border-bold" style="/* border-left:none */border-bottom: 1px #000 solid;border-top: 1px #000 solid;">0000</td>
+               <td id="bottomLine-17" class="xl105" style="border-top:none;border-left:none">&nbsp;</td>
+               <td class="xl174 border-mr" style="/* border-left:none */border-bottom: 1pt #000 solid;border-top: 1pt #000 solid;">0000</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl177" style="border-right:1pt solid black;border-left: 2px #000 solid;">0000</td>
+               <td colspan="2" class="xl177" style="border-right:1pt solid black;border-left: 2pt #000 solid;">0000</td>
                <td colspan="2" class="xl82" style="border-right:1pt solid black;border-left:
                   none">сб</td>
                <td colspan="2" class="xl175" style="
@@ -2701,47 +2690,47 @@
                <td class="xl181" style="border-top:none">&nbsp;</td>
                <td class="xl182" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl117" style="border-top:none;border-left:none;border-right: 2px #000 solid;">364</td>
+               <td class="xl117" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">364</td>
                <td class="xl95"></td>
                <td colspan="2" class="xl179 border-mr" style="/* border-right:1.0pt solid black */">вс</td>
                <td class="xl181" style="border-top:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl184" style="border-right: 2px #000 solid;">0364</td>
+               <td class="xl184" style="border-right: 2pt #000 solid;">0364</td>
                <td class="xl185" style="border-top:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl186" style="border-right: 2px #000 solid;">0728</td>
+               <td class="xl186" style="border-right: 2pt #000 solid;">0728</td>
                <td class="xl187" style="border-top:none">&nbsp;</td>
                <td class="xl182" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl117" style="border-top:none;border-left:none;border-right: 2px #000 solid;">1092</td>
+               <td class="xl117" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">1092</td>
                <td class="xl189" style="border-top:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl117" style="border-top:none;border-left:none">1456</td>
                <td class="xl190 border-mr border-bold" style="border-top:none;/* border-left:none */">0000</td>
                <td colspan="2" class="xl95" style="mso-ignore:colspan"></td>
-               <td colspan="2" class="xl191 border-mr border-bold" style="/* border-right:1.0pt solid black */">вс</td>
+               <td colspan="2" class="xl191 border-mr" style="/* border-right:1.0pt solid black */">вс</td>
                <td class="xl181" style="border-top:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl184" style="border-right: 2px #000 solid;">0364</td>
+               <td class="xl184" style="border-right: 2pt #000 solid;">0364</td>
                <td class="xl185" style="border-top:none;">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl186" style="border-right: 2px #000 solid;">0728</td>
+               <td class="xl186" style="border-right: 2pt #000 solid;">0728</td>
                <td class="xl187" style="border-top:none">&nbsp;</td>
                <td class="xl182" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl117" style="border-top:none;border-left:none;border-right: 2px #000 solid;">1092</td>
+               <td class="xl117" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">1092</td>
                <td class="xl189" style="border-top:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl183" style="border-top:none;border-left:none">1456</td>
                <td class="xl190 border-mr border-bold" style="border-top:none;/* border-left:none */">0000</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl193" style="border-right:1pt solid black;border-left: 2px #000 solid;">0000</td>
+               <td colspan="2" class="xl193" style="border-right:1pt solid black;border-left: 2pt #000 solid;">0000</td>
                <td colspan="2" class="xl195" style="border-right:1pt solid black;border-left:
                   none">вс</td>
                <td colspan="2" class="xl197" style="
@@ -2760,7 +2749,7 @@
                         <tr>
                            <td height="18" class="xl199" style="height:13.5pt; border-left:none; border-bottom: 0; border-top: 0; text-align: center; width: 35px;">01</td>
                            <td class="xl199" style="border-left: 0; text-align: center; border-bottom: 0; border-top: 0;position: relative;"><span style="position: absolute;left: 0;
-                           right: 0; height: 1px; background: #000; top: 9px"></span></td>
+                           right: 0; height: 1pt; background: #000; top: 9px"></span></td>
                            <td class="xl199" style="border-left: 0; text-align: center; width: 35px; border-bottom: 0; border-top: 0;">52</td>
                         </tr>
                      </tbody>
@@ -2810,31 +2799,35 @@
                   ">2048</td>
                <td class="xl208 border-mr border-bold" style="/* border-left:none */">гак-</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl100" style="border-right:1pt solid black;border-left: 2px #000 solid;border-top: 2px #000 solid;">гак +</td>
+               <td colspan="2" class="xl100" style="border-right:1pt solid black;border-left: 2pt #000 solid;border-top: 2pt #000 solid;">гак +</td>
                <td colspan="2" class="xl68" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-top: 2px #000 solid;
+                  border-top: 2pt #000 solid;
                   ">нед</td>
                <td colspan="2" class="xl68" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-top: 2px #000 solid;
+                  border-top: 2pt #000 solid;
                   ">гак -</td>
             </tr>
             <tr height="18" style="height:13.5pt">
                <td colspan="2" height="18" class="xl136" style="border-right:2.0pt solid black;
                   height:13.5pt;border-bottom:2.0pt solid black;border-left:2.0pt solid black;">год №</td>
-               <td colspan="4" height="18" width="120" style="border-right:2.0pt solid black;
-                  height:13.5pt;width:92pt" align="left" valign="top">
+               <td colspan="4" height="18" width="120" style="
+                  border-right:2.0pt solid black;
+                  height:13.5pt;
+                  width:92pt;
+                  border-bottom: 2.0pt solid black;
+                  " align="left" valign="top">
                   <table cellpadding="0" cellspacing="0" width="100%;">
                      <tbody>
                         <tr>
                            <td height="18" class="xl199" style="height:13.5pt; border-left:none; border-bottom: 0; text-align: center; width: 35px;; border-top: 0">001</td>
                            <td class="xl199" style="border-left: 0; text-align: center; border-bottom: 0; border-top: 0; position: relative;"><span style="position: absolute;left: 0;
-                           right: 0; height: 1px; background: #000; top: 9px"></span></td>
+                           right: 0; height: 1pt; background: #000; top: 9px"></span></td>
                            <td class="xl199" style="border-left: 0; text-align: center; width: 35px; border-bottom: 0; border-top: 0">128</td>
                         </tr>
                      </tbody>
@@ -2845,6 +2838,7 @@
                <td colspan="17" class="xl100" style="
                   border-right: 2.0pt solid black;
                   border-top:2.0pt solid black;
+                  border-bottom: 2.0pt solid black;
                   border-left:
                   none;
                   ">505</td>
@@ -2857,7 +2851,7 @@
                   none; */
                   ">512</td>
                <td class="xl95"></td>
-               <td colspan="2" class="xl100 border-bold" style="border-right:1pt solid black;border-left: 2px #000 solid;">високос</td>
+               <td colspan="2" class="xl100 border-bold" style="border-right:1pt solid black;border-left: 2pt #000 solid;">високос</td>
                <td colspan="2" class="xl68 border-bold" style="border-right:1pt solid black;border-left:
                   none">цендент</td>
                <td colspan="2" class="xl68 border-bold" style="
@@ -2889,7 +2883,7 @@
                <td colspan="2" height="18" class="xl136" style="
                   border-right: 2pt solid black;
                   height:13.5pt;
-                  border-left: 2px #000 solid;
+                  border-left: 2pt #000 solid;
                   ">календа</td>
                <td colspan="52" height="18" width="1560" style="
                   border-right: 2pt solid black;
@@ -2904,143 +2898,143 @@
                   /* border-right: 2pt solid black; */
                   height:13.5pt;
                   ">нед №</td>
-               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   /* margin-top: 5px; */
                   /* position: relative; */
                   /* top: 0px; */
-                  padding-top: 2px;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
-               <td class="xl214" style="border-top:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl214" style="border-top:none;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   border-top: 0;
-                  padding-top: 2px;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
-               <td class="xl210" style="border-top:none;border-left:none;border-top: 0;border-bottom: 2px #000 solid;">001</td>
-               <td colspan="3" class="xl211" style="
-                  border-right:1pt solid black;
-                  border-left:
-                  none;
-                  border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  padding-top: 2px;
-                  "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
-               <td colspan="2" class="xl211" style="
-                  border-right: 2pt solid black;
-                  border-left:
-                  none;
-                  border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  ">209</td>
-               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl210" style="border-top:none;border-left:none;border-top: 0;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  padding-top: 2px;
+                  border-bottom: 2pt #000 solid;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
+                  ">209</td>
+               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2pt #000 solid;">001</td>
+               <td colspan="3" class="xl211" style="
+                  border-right:1pt solid black;
+                  border-left:
+                  none;
+                  border-top: 0;
+                  border-bottom: 2pt #000 solid;
+                  padding-top: 2pt;
+                  "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
+               <td colspan="2" class="xl211" style="
+                  border-right: 2pt solid black;
+                  border-left:
+                  none;
+                  border-top: 0;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
                <td colspan="4" class="xl215" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">…</td>
-               <td class="xl214" style="border-top:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl214" style="border-top:none;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  padding-top: 2px;
+                  border-bottom: 2pt #000 solid;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
-               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  padding-top: 2px;
+                  border-bottom: 2pt #000 solid;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
-               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  padding-top: 2px;
+                  border-bottom: 2pt #000 solid;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
-               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2px #000 solid;">001</td>
+               <td class="xl210" style="border-top:none;border-left:none;border-bottom: 2pt #000 solid;">001</td>
                <td colspan="3" class="xl211" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
-                  padding-top: 2px;
+                  border-bottom: 2pt #000 solid;
+                  padding-top: 2pt;
                   "><img width="67" height="10" src="/calendars/shks/image014.png"></td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   border-top: 0;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">209</td>
             </tr>
             <tr height="18" style="height:13.5pt">
@@ -3052,103 +3046,103 @@
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl215" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">…</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
                <td colspan="4" class="xl218" style="
                   border-right:1pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">1456</td>
                <td colspan="2" class="xl211" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
-                  border-bottom: 2px #000 solid;
+                  border-bottom: 2pt #000 solid;
                   ">"7"</td>
             </tr>
             <tr height="17" style="height:12.75pt">
@@ -3156,7 +3150,7 @@
                   /* border-right: 1pt solid black; */
                   height:12.75pt;
                   width:46pt;
-                  " align="left" valign="top" class="border-bold border-mr">
+                  " align="left" valign="top" class="border-mr">
                   <span style="mso-ignore:vglayout2">
                      <table cellpadding="0" cellspacing="0" width="100%">
                         <tbody>
@@ -3192,7 +3186,7 @@
                                  border-bottom: 0;
                                  border-top: 0;
                                  border-left: 0;
-                                 /* border-right: 2px #000 solid; */
+                                 /* border-right: 2pt #000 solid; */
                                  ">1457</td>
                            </tr>
                         </tbody>
@@ -3251,7 +3245,7 @@
                <td class="xl222" style="border-top:none;border-left:none">…</td>
                <td class="xl223" style="border-top:none;border-left:none">…</td>
                <td class="xl223" style="border-top:none;border-left:none">…</td>
-               <td class="xl224" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
+               <td class="xl224" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
                <td align="left" valign="top" class="xl117">
                   0001
                </td>
@@ -3316,42 +3310,44 @@
                   ">1457</td>
             </tr>
             <tr height="17" style="height:12.75pt">
-               <td colspan="2" height="17" class="xl164  border-bold border-mr" style="
+               <td colspan="2" height="17" class="xl164 border-mr" style="
                   /* border-right:1.0pt solid black; */
                   height:12.75pt;
                   ">вт</td>
-               <td class="xl225 start-line-1_7" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-18" class="xl225" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-18" class="xl73 startLine-19" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-19" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-20" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-20" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
-               <td class="xl228 start-line-1_1">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-21" class="xl228" style="
+    position: relative;
+">&nbsp;</td>
+               <td id="endLine-21" class="xl73 startLine-22" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-22" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-23" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-23" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
-               <td class="xl225 start-line-1_2" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-24" class="xl225" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-24" class="xl73 startLine-25" style="border-left:none;position: relative;position: relative;">&nbsp;</td>
+               <td id="endLine-25" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-26" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-26" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
-               <td class="xl225 start-line-1_3" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-27" class="xl225" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-27" class="xl73 startLine-28" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-28" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-29" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-29" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
@@ -3359,46 +3355,46 @@
                <td class="xl229" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
-               <td class="xl231" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
-               <td class="xl133 start-line-1_8" style="border-top:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td class="xl231" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
+               <td id="startLine-30" class="xl133" style="border-top:none;position: relative;">&nbsp;</td>
+               <td id="endLine-30" class="startLine-31 xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-31" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="startLine-32" class="xl79" style="border-top:none;border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-32" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
-               <td class="xl225 start-line-1_4" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-33" class="xl225" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-33" class="startLine-34 xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-34" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-35" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-35" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
-               <td class="xl225 start-line-1_5" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-36" class="xl225" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-36" class="startLine-37 xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-37" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-38" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-38" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
-               <td class="xl225 start-line-1_6" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td class="xl73" style="border-left:none">&nbsp;</td>
-               <td colspan="2" class="xl226" style="
+               <td id="startLine-39" class="xl225" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-39" class="startLine-40 xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-40" class="xl73" style="border-left:none">&nbsp;</td>
+               <td id="startLine-41" class="xl73" style="border-left:none;position: relative;">&nbsp;</td>
+               <td id="endLine-41" colspan="2" class="xl226" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">1458</td>
             </tr>
             <tr height="17" style="height:12.75pt">
-               <td colspan="2" height="17" class="xl164 border-bold border-mr" style="
+               <td colspan="2" height="17" class="xl164 border-mr" style="
                   /* border-right:1.0pt solid black; */
                   height:12.75pt;
                   ">ср</td>
@@ -3441,7 +3437,7 @@
                <td class="xl229" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
-               <td class="xl231" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
+               <td class="xl231" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3480,11 +3476,11 @@
                   ">1459</td>
             </tr>
             <tr height="17" style="height:12.75pt">
-               <td colspan="2" height="17" class="xl164 border-bold border-mr" style="
+               <td colspan="2" height="17" class="xl164 border-mr" style="
                   /* border-right:1.0pt solid black; */
                   height:12.75pt;
                   ">чт</td>
-               <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-18" class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3523,7 +3519,7 @@
                <td class="xl229" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
-               <td class="xl231" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
+               <td class="xl231" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3562,7 +3558,7 @@
                   ">1460</td>
             </tr>
             <tr height="17" style="height:12.75pt">
-               <td colspan="2" height="17" class="xl164 border-bold border-mr" style="
+               <td colspan="2" height="17" class="xl164 border-mr" style="
                   /* border-right:1.0pt solid black; */
                   height:12.75pt;
                   ">пт</td>
@@ -3575,7 +3571,7 @@
                   border-left:
                   none;
                   ">1461</td>
-               <td class="xl133" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-21" class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3584,7 +3580,7 @@
                   border-left:
                   none;
                   ">1461</td>
-               <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-24" class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3593,7 +3589,7 @@
                   border-left:
                   none;
                   ">1461</td>
-               <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-27" class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3605,8 +3601,8 @@
                <td class="xl229" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
-               <td class="xl231" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
-               <td class="xl133" style="border-top:none">&nbsp;</td>
+               <td class="xl231" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
+               <td id="bottomLine-30" class="xl133" style="border-top:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3615,7 +3611,7 @@
                   border-left:
                   none;
                   ">1461</td>
-               <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-33" class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3624,7 +3620,7 @@
                   border-left:
                   none;
                   ">1461</td>
-               <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-36" class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3633,7 +3629,7 @@
                   border-left:
                   none;
                   ">1461</td>
-               <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-39" class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3644,41 +3640,41 @@
                   ">0000</td>
             </tr>
             <tr height="17" style="height:12.75pt">
-               <td colspan="2" height="17" class="xl164 border-bold border-mr" style="
+               <td colspan="2" height="17" class="xl164 border-mr" style="
                   /* border-right:1.0pt solid black; */
                   height:12.75pt;
                   ">сб</td>
                <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-19" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79  end-line-1_7" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-20" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">0000</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-22" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_1" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-23" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">0000</td>
                <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-25" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_2" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-26" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">0000</td>
                <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-28" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_3" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-29" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
@@ -3687,38 +3683,38 @@
                <td class="xl229" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
                <td class="xl230" style="border-top:none;border-left:none">…</td>
-               <td class="xl231" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
+               <td class="xl231" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
                <td class="xl133" style="border-top:none">&nbsp;</td>
+               <td id="bottomLine-31" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_8" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-32" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">0000</td>
                <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-34" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_4" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-35" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">0000</td>
                <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-37" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_5" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-38" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">0000</td>
                <td class="xl167" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-40" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
-               <td class="xl79 end-line-1_6" style="border-top:none;border-left:none">&nbsp;</td>
+               <td id="bottomLine-41" class="xl79" style="border-top:none;border-left:none">&nbsp;</td>
                <td colspan="2" class="xl175" style="
                   border-right: 2pt solid black;
                   border-left:
@@ -3726,7 +3722,7 @@
                   ">0000</td>
             </tr>
             <tr height="18" style="height:13.5pt">
-               <td colspan="2" height="18" class="xl179 border-bold border-mr" style="
+               <td colspan="2" height="18" class="xl179 border-mr" style="
                   /* border-right:1.0pt solid black; */
                   height:13.5pt;
                   ">вс</td>
@@ -3769,7 +3765,7 @@
                <td class="xl232" style="border-top:none;border-left:none">…</td>
                <td class="xl233" style="border-top:none;border-left:none">…</td>
                <td class="xl233" style="border-top:none;border-left:none">…</td>
-               <td class="xl234" style="border-top:none;border-left:none;border-right: 2px #000 solid;">…</td>
+               <td class="xl234" style="border-top:none;border-left:none;border-right: 2pt #000 solid;">…</td>
                <td class="xl187" style="border-top:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
                <td class="xl90" style="border-top:none;border-left:none">&nbsp;</td>
@@ -3812,27 +3808,27 @@
                   /* border-right:1.0pt solid black; */
                   height:13.5pt;
                   ">год №</td>
-               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1921</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;border-right: 1px #000 solid;">1922</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1923</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1924</td>
+               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1921</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;border-right: 1pt #000 solid;">1922</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1923</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1924</td>
                <td colspan="2" class="xl237 border-bold border-mr" style="
                   /* border-right:1.0pt solid black; */
                   border-left:
                   none;
                   ">гак +</td>
-               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1925</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1926</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1927</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1928</td>
+               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1925</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1926</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1927</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1928</td>
                <td colspan="2" class="xl237 border-bold border-mr" style="border-right:1.0pt solid black;border-left:
                   none">гак +</td>
                <td class="xl238 border-bold border-mr" style="
-                  border-right: 1px #000 solid;
+                  border-right: 1pt #000 solid;
                   ">1929</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1930</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1931</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">1932</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1930</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1931</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">1932</td>
                <td colspan="2" class="xl237 border-bold border-mr" style="
                   border-right: 2pt solid black;
                   border-left:
@@ -3857,30 +3853,30 @@
                   border-left:
                   none;
                   ">гак +</td>
-               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2037</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2038</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2039</td>
-               <td class="xl239 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2040</td>
+               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2037</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2038</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2039</td>
+               <td class="xl239 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2040</td>
                <td colspan="2" class="xl205 border-bold border-mr" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">гак +</td>
-               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2041</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2042</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2043</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2044</td>
+               <td class="xl235 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2041</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2042</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2043</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2044</td>
                <td colspan="2" class="xl237 border-bold border-mr" style="
                   border-right: 2pt solid black;
                   border-left:
                   none;
                   ">гак +</td>
                <td class="xl238 border-bold border-mr" style="
-                  border-right: 1px #000 solid;
+                  border-right: 1pt #000 solid;
                   ">2045</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2046</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2047</td>
-               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1px #000 solid;">2048</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2046</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2047</td>
+               <td class="xl236 border-bold border-mr" style="border-left:none;border-right: 1pt #000 solid;">2048</td>
                <td colspan="2" class="xl237 border-bold border-mr" style="
                   border-right: 2pt solid black;
                   border-left:
@@ -4014,6 +4010,8 @@
             <!--[endif]-->
          </tbody>
       </table>
+
+
 </div>
 
 </div>
