@@ -146,46 +146,48 @@
   none;
   ">дек</td>
  </tr>
+
  <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
   <?php foreach ($calendars['table-1'][1] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
+
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вт</td>
   <?php foreach ($calendars['table-1'][2] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">ср</td>
   <?php foreach ($calendars['table-1'][3] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
   <?php foreach ($calendars['table-1'][4] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
   <?php foreach ($calendars['table-1'][5] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">сб</td>
   <?php foreach ($calendars['table-1'][6] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl91" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
   <?php foreach ($calendars['table-1'][7] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;" data-year="<?=$calendars['table-1']['year']?>" <?php if($calendars['table-1']['year'] == $currentYear): ?> data-week-days="true"<?php endif; ?>>
@@ -277,49 +279,49 @@
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
   <?php foreach ($calendars['table-2'][1] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">пн</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
   <?php foreach ($calendars['table-2'][2] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">ср</td>
   <?php foreach ($calendars['table-2'][3] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">ср</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
   <?php foreach ($calendars['table-2'][4] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">чт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
   <?php foreach ($calendars['table-2'][5] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">пт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">сб</td>
   <?php foreach ($calendars['table-2'][6] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
   <?php foreach ($calendars['table-2'][7] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вс</td>
  </tr>
@@ -405,49 +407,49 @@
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
   <?php foreach ($calendars['table-3'][1] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">пн</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вт</td>
   <?php foreach ($calendars['table-3'][2] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">ср</td>
   <?php foreach ($calendars['table-3'][3] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">ср</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
   <?php foreach ($calendars['table-3'][4] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">чт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
   <?php foreach ($calendars['table-3'][5] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-top:none;border-left: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">пт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
   <?php foreach ($calendars['table-3'][6] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;border-left: 2pt solid windowtext;">сб</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
   <?php foreach ($calendars['table-3'][7] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-right: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">вс</td>
  </tr>
@@ -546,49 +548,49 @@
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="1" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
   <?php foreach ($calendars['table-4'][1] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">пн</td>
  </tr>
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="2" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77 c7" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вт</td>
   <?php foreach ($calendars['table-4'][2] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77 c7" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
  </tr>
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="3" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">ср</td>
   <?php foreach ($calendars['table-4'][3] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">ср</td>
  </tr>
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="4" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
   <?php foreach ($calendars['table-4'][4] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>  
   <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">чт</td>
  </tr>
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="5" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
   <?php foreach ($calendars['table-4'][5] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">пт</td>
  </tr>
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="6" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77 c8" style="height:14.1pt;border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
   <?php foreach ($calendars['table-4'][6] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
  </tr>
  <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="7" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl91" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
   <?php foreach ($calendars['table-4'][7] as $key => $date) : ?>
-  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <td class="xl125" style="border-left:none;<?php if($date['day'] == $date['daysInMonth']) :?> border-right: 2pt solid windowtext; border-bottom: 2pt solid windowtext;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
   <?php endforeach; ?>
   <td class="xl91" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вс</td>
  </tr>
