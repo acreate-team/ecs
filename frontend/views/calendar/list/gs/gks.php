@@ -1,8 +1,8 @@
 <div id="headerCalendar">
     <div class="container">
-        <div class="left prev"><a href="/"></a></div>
+        <div class="left prev"><a href="?y=<?=$calendars['startYear']-4?>"></a></div>
         <div class="center title"><span>КАЛЕНДАРНАЯ&nbsp;&nbsp;&nbsp;СИСТЕМА&nbsp;&nbsp;&nbsp;ГРИГОРИАНСКАЯ</span></div>
-        <div class="right next"><a href="/"></a></div>
+        <div class="right next"><a href="?y=<?=$calendars['startYear']+4?>"></a></div>
     </div>
 </div>
 
@@ -11,6 +11,9 @@
 <link type="text/css" rel="stylesheet" href="/calendars/gks/stylesheet.css"/>
 
 <div class="calendarWrap gks">
+
+
+
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:
  collapse;table-layout:fixed; margin: auto;">
 <tbody><tr height="18" style="mso-height-source:userset;height:14.1pt;/* border-left: 2pt solid windowtext; */">
@@ -20,7 +23,7 @@
   width:68px;
   border-left: 2pt solid windowtext;
   border-top: 2pt solid windowtext;
-  ">2016-2017</td>
+  "><?=$calendars['startYear']-1?>-<?=$calendars['startYear']?></td>
   <td width="34"></td>
   <td class="xl65" width="34"></td>
   <td class="xl65" width="34"></td>
@@ -74,7 +77,12 @@
   <td class="xl65" width="34"></td>
   <td class="xl65" width="34"></td>
  </tr>
- <tr height="18" style="mso-height-source:userset;height:14.1pt;border-left: 2pt solid windowtext;border-top: 2pt solid windowtext;">
+
+
+
+
+
+ <tr height="18"<?php if($calendars['table-1']['year'] == $currentYear): ?>class="currentTable" <?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-left: 2pt solid windowtext;border-top: 2pt solid windowtext;">
   <td height="18" class="xl90" style="height:14.1pt;border-right: 2pt solid windowtext;border-top:none;">&nbsp;</td>
   <td class="xl123" style="border-left:none;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">→</td>
   <td colspan="5" class="xl149" style="
@@ -140,469 +148,69 @@
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
-  <td class="xl130" style="border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl125">02</td>
-  <td class="xl125" style="border-left:none">09</td>
-  <td class="xl125" style="border-left:none">16</td>
-  <td class="xl125" style="border-left:none">23</td>
-  <td class="xl131" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl129">06</td>
-  <td class="xl125" style="border-left:none">13</td>
-  <td class="xl125" style="border-left:none">20</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129"><font class="font6">06</font></td>
-  <td class="xl125" style="border-left:none">13</td>
-  <td class="xl125" style="border-left:none">20</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129"><font class="font6">03</font></td>
-  <td class="xl125" style="border-left:none">10</td>
-  <td class="xl125" style="border-left:none">17</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl126" style="border-top:none;border-left:none">01</td>
-  <td class="xl129" style="border-left:none"><font class="font6">08</font></td>
-  <td class="xl132">15</td>
-  <td class="xl133">22</td>
-  <td class="xl134" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl129"><font class="font6">05</font></td>
-  <td class="xl133" style="border-left:none">12</td>
-  <td class="xl133" style="border-left:none">19</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl129"><font class="font6">03</font></td>
-  <td class="xl125" style="border-left:none">10</td>
-  <td class="xl125" style="border-left:none">17</td>
-  <td class="xl125" style="border-left:none">24</td>
-  <td class="xl135" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl129"><font class="font6">07</font></td>
-  <td class="xl125" style="border-left:none">14</td>
-  <td class="xl125" style="border-left:none">21</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129"><font class="font6">04</font></td>
-  <td class="xl125" style="border-left:none">11</td>
-  <td class="xl125" style="border-left:none">18</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl125"><font class="font6">02</font></td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl125" style="border-left:none">16</td>
-  <td class="xl125" style="border-left:none">23</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl129"><font class="font6">06</font></td>
-  <td class="xl125" style="border-left:none">13</td>
-  <td class="xl125" style="border-left:none">20</td>
-  <td class="xl131" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129"><font class="font6">04</font></td>
-  <td class="xl125" style="border-left:none">11</td>
-  <td class="xl136" style="border-top:none;border-left:none">18</td>
-  <td class="xl137" style="border-top:none;border-right: 2pt solid windowtext;">25</td>
+  <?php foreach ($calendars['table-1'][1] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вт</td>
-  <td class="xl138" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl125">03</td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl129" style="border-top:none;border-left:none">17</td>
-  <td class="xl129" style="border-top:none;border-left:none">24</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl129" style="border-top:none">07</td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl128" style="border-top:none;border-left:none">02</td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl141">16</td>
-  <td class="xl129">23</td>
-  <td class="xl140" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl129" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl141">13</td>
-  <td class="xl129">20</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl129" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl129" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl129" style="border-top:none;border-left:none">17</td>
-  <td class="xl129" style="border-top:none;border-left:none">24</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl142" style="border-top:none;border-right: 2pt solid windowtext;">26</td>
+  <?php foreach ($calendars['table-1'][2] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">ср</td>
-  <td class="xl130" style="border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl125">04</td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl126" style="border-top:none;border-left:none">01</td>
-  <td class="xl129" style="border-top:none;border-left:none">08</td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">22</td>
-  <td class="xl126" style="border-top:none;border-left:none">01</td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl129" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl128" style="border-top:none;border-left:none">03</td>
-  <td class="xl133" style="border-left:none">10</td>
-  <td class="xl132">17</td>
-  <td class="xl133">24</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl133" style="border-left:none">14</td>
-  <td class="xl133" style="border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl125"><font class="font6">02</font></td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">16</td>
-  <td class="xl129" style="border-top:none;border-left:none">23</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl129" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">13</td>
-  <td class="xl129" style="border-top:none;border-left:none">20</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl140" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl129" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">13</td>
-  <td class="xl129" style="border-top:none;border-left:none">20</td>
-  <td class="xl142" style="border-top:none;border-right: 2pt solid windowtext;">27</td>
+  <?php foreach ($calendars['table-1'][3] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
-  <td class="xl138" style="border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl125">05</td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl128" style="border-top:none;border-left:none">02</td>
-  <td class="xl129" style="border-top:none;border-left:none">09</td>
-  <td class="xl129" style="border-top:none;border-left:none">16</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">23</td>
-  <td class="xl128" style="border-top:none;border-left:none">02</td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">16</td>
-  <td class="xl129" style="border-top:none;border-left:none">23</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl129" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">13</td>
-  <td class="xl129" style="border-top:none;border-left:none">20</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl128" style="border-top:none;border-left:none">04</td>
-  <td class="xl129" style="border-left:none">11</td>
-  <td class="xl141">18</td>
-  <td class="xl140" style="
-    border-right: 2pt solid windowtext;
-">25</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl141">15</td>
-  <td class="xl129">22</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl129" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">13</td>
-  <td class="xl129" style="border-top:none;border-left:none">20</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl129" style="border-top:none;border-left:none">17</td>
-  <td class="xl129" style="border-top:none;border-left:none">24</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl125"><font class="font6">02</font></td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">16</td>
-  <td class="xl129" style="border-top:none;border-left:none">23</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl142" style="border-top:none;border-right: 2pt solid windowtext;">28</td>
+  <?php foreach ($calendars['table-1'][4] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
-  <td class="xl130" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl125">06</td>
-  <td class="xl129" style="border-top:none;border-left:none">13</td>
-  <td class="xl129" style="border-top:none;border-left:none">20</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl128" style="border-top:none;border-left:none">03</td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl129" style="border-top:none;border-left:none">17</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl128" style="border-top:none;border-left:none">03</td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl129" style="border-top:none;border-left:none">17</td>
-  <td class="xl129" style="border-top:none;border-left:none">24</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl128" style="border-top:none;border-left:none">05</td>
-  <td class="xl133" style="border-left:none">12</td>
-  <td class="xl132">19</td>
-  <td class="xl144" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl125"><font class="font6">02</font></td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl133" style="border-left:none">16</td>
-  <td class="xl129" style="border-top:none;border-left:none">23</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl129" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">13</td>
-  <td class="xl129" style="border-top:none;border-left:none">20</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl129" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl129" style="border-top:none;border-left:none">17</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl142" style="border-top:none;border-right: 2pt solid windowtext;">29</td>
+  <?php foreach ($calendars['table-1'][5] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">сб</td>
-  <td class="xl145" style="border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl125">07</td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl128" style="border-top:none;border-left:none">04</td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl128" style="border-top:none;border-left:none">04</td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl128" style="border-top:none;border-left:none">06</td>
-  <td class="xl129" style="border-left:none">13</td>
-  <td class="xl141">20</td>
-  <td class="xl140" style="
-    border-right: 2pt solid windowtext;
-">27</td>
-  <td class="xl129" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">10</td>
-  <td class="xl141">17</td>
-  <td class="xl140" style="border-top:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl126" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl129" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">15</td>
-  <td class="xl129" style="border-top:none;border-left:none">22</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl129" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl129" style="border-top:none;border-left:none">19</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl125"><font class="font6">02</font></td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">16</td>
-  <td class="xl129" style="border-top:none;border-left:none">23</td>
-  <td class="xl139" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl129" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">14</td>
-  <td class="xl129" style="border-top:none;border-left:none">21</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl129" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">11</td>
-  <td class="xl129" style="border-top:none;border-left:none">18</td>
-  <td class="xl140" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl125"><font class="font6">02</font></td>
-  <td class="xl125" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl129" style="border-top:none;border-left:none">16</td>
-  <td class="xl129" style="border-top:none;border-left:none">23</td>
-  <td class="xl142" style="border-top:none;border-right: 2pt solid windowtext;">30</td>
+  <?php foreach ($calendars['table-1'][6] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl91" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
-  <td class="xl124">01</td>
-  <td class="xl125" style="border-left:none">08</td>
-  <td class="xl143" style="border-top:none;border-left:none">15</td>
-  <td class="xl143" style="border-top:none;border-left:none">22</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl127" style="border-left:none">05</td>
-  <td class="xl129" style="border-top:none;border-left:none">12</td>
-  <td class="xl143" style="border-top:none;border-left:none">19</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl127" style="border-left:none">05</td>
-  <td class="xl143" style="border-top:none;border-left:none">12</td>
-  <td class="xl143" style="border-top:none;border-left:none">19</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl133"><font class="font6">02</font></td>
-  <td class="xl133" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">16</td>
-  <td class="xl143" style="border-top:none;border-left:none">23</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl127" style="border-left:none">07</td>
-  <td class="xl133" style="border-left:none">14</td>
-  <td class="xl132">21</td>
-  <td class="xl144" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl143" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl133" style="border-left:none">11</td>
-  <td class="xl133" style="border-left:none">18</td>
-  <td class="xl144" style="border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl133"><font class="font6">02</font></td>
-  <td class="xl133" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">16</td>
-  <td class="xl143" style="border-top:none;border-left:none">23</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl143" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">13</td>
-  <td class="xl143" style="border-top:none;border-left:none">20</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl143" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">10</td>
-  <td class="xl143" style="border-top:none;border-left:none">17</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl124"><font class="font6">01</font></td>
-  <td class="xl143" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">15</td>
-  <td class="xl143" style="border-top:none;border-left:none">22</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl143" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">12</td>
-  <td class="xl143" style="border-top:none;border-left:none">19</td>
-  <td class="xl146" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl143" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl143" style="border-top:none;border-left:none">10</td>
-  <td class="xl143" style="border-top:none;border-left:none">17</td>
-  <td class="xl143" style="border-top:none;border-left:none">24</td>
-  <td class="xl147" style="border-top:none;border-right: 2pt solid windowtext;">31</td>
+  <?php foreach ($calendars['table-1'][7] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
  </tr>
- <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
+ <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;" data-year="<?=$calendars['table-1']['year']?>" <?php if($calendars['table-1']['year'] == $currentYear): ?> data-week-days="true"<?php endif; ?>>
   <td height="18" class="xl96" style="height:14.1pt;border-left: 2pt solid windowtext;border-top:none;border-right: 2pt solid windowtext;">&nbsp;</td>
-  <td class="xl119">01</td>
-  <td class="xl120" style="border-left:none">02</td>
-  <td class="xl120" style="border-left:none">03</td>
-  <td class="xl120" style="border-left:none">04</td>
-  <td class="xl121" style="border-left:none;border-right: 2pt solid windowtext;">05</td>
-  <td class="xl119" style="border-left:none">06</td>
-  <td class="xl120" style="border-left:none">07</td>
-  <td class="xl120" style="border-left:none">08</td>
-  <td class="xl121" style="border-left:none;border-right: 2pt solid windowtext;">09</td>
-  <td class="xl101">10</td>
-  <td class="xl99" style="border-left:none">11</td>
-  <td class="xl99" style="border-left:none">12</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">13</td>
-  <td class="xl101">14</td>
-  <td class="xl99" style="border-left:none">15</td>
-  <td class="xl99" style="border-left:none">16</td>
-  <td class="xl99" style="border-left:none">17</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">18</td>
-  <td class="xl98">19</td>
-  <td class="xl99" style="border-left:none">20</td>
-  <td class="xl99" style="border-left:none">21</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">22</td>
-  <td class="xl101">23</td>
-  <td class="xl99" style="border-left:none">24</td>
-  <td class="xl99" style="border-left:none">25</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl98">27</td>
-  <td class="xl99" style="border-left:none">28</td>
-  <td class="xl99" style="border-left:none">29</td>
-  <td class="xl99" style="border-left:none">30</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl101">32</td>
-  <td class="xl99" style="border-left:none">33</td>
-  <td class="xl99" style="border-left:none">34</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">35</td>
-  <td class="xl98">36</td>
-  <td class="xl99" style="border-left:none">37</td>
-  <td class="xl99" style="border-left:none">38</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">39</td>
-  <td class="xl101">40</td>
-  <td class="xl99" style="border-left:none">41</td>
-  <td class="xl99" style="border-left:none">42</td>
-  <td class="xl99" style="border-left:none">43</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">44</td>
-  <td class="xl98">45</td>
-  <td class="xl99" style="border-left:none">46</td>
-  <td class="xl99" style="border-left:none">47</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">48</td>
-  <td class="xl98" style="border-left:none">49</td>
-  <td class="xl99" style="border-left:none">50</td>
-  <td class="xl99" style="border-left:none">51</td>
-  <td class="xl99" style="border-left:none">52</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">53</td>
+  <?php $week = 0; ?>
+  <?php foreach ($calendars['table-1'][7] as $key => $date) : ?>
+  <?php $week++; ?>
+  <td class="xl99" style="border-left:none"><?=sprintf("%02d", $week)?></td>
+  <?php endforeach; ?>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
-  <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № 1 (сед №
-  1; лил № 6; век № 21; юга № 505; год № 2017 от р.х.).</td>
+  <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № 1 (сед №*; лил № *; век № **; юга № ***; год № <?=$calendars['table-1']['year']?> от р.х.).</td>
   <td colspan="27" class="xl65" style="mso-ignore:colspan"></td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" colspan="54" class="xl65" style="height:14.1pt;mso-ignore:colspan"></td>
  </tr>
- <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
+
+
+
+
+
+
+
+ <tr height="18"<?php if($calendars['table-2']['year'] == $currentYear): ?>class="currentTable" <?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
   <td height="18" class="xl92" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">&nbsp;</td>
   <td colspan="5" class="xl149" style="
   border-right: 2pt solid black;
@@ -668,497 +276,76 @@
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
-  <td class="xl126" style="border-top:none;border-left:none">01</td>
-  <td class="xl72" style="border-left:none"><font class="font6">08</font></td>
-  <td class="xl74">15</td>
-  <td class="xl68">22</td>
-  <td class="xl75" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl75" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl72"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl75" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl76" style="border-right: 2pt solid windowtext;border-top:none;border-bottom: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">28</td>
-  <td class="xl72"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">30</td>
-  <td class="xl72"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">27</td>
-  <td class="xl72"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl68" style="border-left:none">17</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">29</td>
-  <td class="xl72"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl75" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl72"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl93" style="border-top:none;border-left:none">17</td>
-  <td class="xl94" style="border-top:none">24</td>
+  <?php foreach ($calendars['table-2'][1] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">пн</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
-  <td class="xl128" style="border-top:none;border-left:none">02</td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl80">16</td>
-  <td class="xl72">23</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl80">13</td>
-  <td class="xl72">20</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl80">13</td>
-  <td class="xl72">20</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl80" style="border-top:none">10</td>
-  <td class="xl72">17</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-left:none">15</td>
-  <td class="xl80">22</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl80">19</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl80">17</td>
-  <td class="xl72">24</td>
-  <td class="xl78" style="border-right: 2pt solid windowtext;border-left:none;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl80">14</td>
-  <td class="xl72">21</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl80">11</td>
-  <td class="xl72">18</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-left:none">16</td>
-  <td class="xl80">23</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl80">20</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl72" style="border-left:none">18</td>
-  <td class="xl81">25</td>
+  <?php foreach ($calendars['table-2'][2] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">ср</td>
-  <td class="xl128" style="border-top:none;border-left:none">03</td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl74">17</td>
-  <td class="xl68">24</td>
-  <td class="xl78" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl85" style="border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl68" style="border-left:none">17</td>
-  <td class="xl68" style="border-left:none">24</td>
-  <td class="xl78" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl95">26</td>
+  <?php foreach ($calendars['table-2'][3] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">ср</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
-  <td class="xl128" style="border-top:none;border-left:none">04</td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl80">18</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl80">15</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">22</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl80">15</td>
-  <td class="xl72">22</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl80">12</td>
-  <td class="xl72">19</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl80" style="border-top:none">10</td>
-  <td class="xl72">17</td>
-  <td class="xl80">24</td>
-  <td class="xl78" style="
-    border-right: 2pt solid windowtext;
-    border-bottom: 2pt solid windowtext;
-">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl80">21</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl80">19</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl80">16</td>
-  <td class="xl72">23</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl80">13</td>
-  <td class="xl72">20</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl72" style="border-left:none">18</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-left:none">15</td>
-  <td class="xl80">22</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl72" style="border-left:none">20</td>
-  <td class="xl81">27</td>
+  <?php foreach ($calendars['table-2'][4] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">чт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
-  <td class="xl128" style="border-top:none;border-left:none">05</td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl74">19</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">23</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl68" style="border-left:none">17</td>
-  <td class="xl68" style="border-left:none">24</td>
-  <td class="xl78" style="border-right: 2pt solid windowtext;border-top:none;border-bottom: 2pt solid windowtext;border-left:none;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl85" style="border-right: 2pt solid windowtext;border-left:none;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl95">28</td>
+  <?php foreach ($calendars['table-2'][5] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">пт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">сб</td>
-  <td class="xl128" style="border-top:none;border-left:none">06</td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl80">20</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl80">17</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">24</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl80">17</td>
-  <td class="xl72">24</td>
-  <td class="xl78" style="border-right: 2pt solid windowtext;border-left:none;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl80">14</td>
-  <td class="xl72">21</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl80">12</td>
-  <td class="xl72">19</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-left:none">16</td>
-  <td class="xl80">23</td>
-  <td class="xl78" style="
-    border-right: 2pt solid windowtext;
-    border-bottom: 2pt solid windowtext;
-">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl80">21</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl80">18</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl80">15</td>
-  <td class="xl72">22</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl72" style="border-left:none">20</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl80" style="border-top:none">10</td>
-  <td class="xl72">17</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-left:none">15</td>
-  <td class="xl72" style="border-left:none">22</td>
-  <td class="xl81">29</td>
+  <?php foreach ($calendars['table-2'][6] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
-  <td class="xl127" style="border-left:none">07</td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl74">21</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl84" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl84" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">25</td>
-  <td class="xl97" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl84" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl84" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl84" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl68" style="border-left:none">17</td>
-  <td class="xl88" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">24</td>
-  <td class="xl97" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl84" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl84" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl68"><font class="font6">02</font></td>
-  <td class="xl68" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl84" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl84" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl68"><font class="font6">02</font></td>
-  <td class="xl68" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl95">30</td>
+  <?php foreach ($calendars['table-2'][7] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вс</td>
  </tr>
- <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
+ <tr height="18" data-year="<?=$calendars['table-2']['year']?>" <?php if($calendars['table-2']['year'] == $currentYear): ?> data-week-days="true"<?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
   <td height="18" class="xl90" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">&nbsp;</td>
-  <td class="xl119" style="border-left:none">01</td>
-  <td class="xl120" style="border-left:none">02</td>
-  <td class="xl120" style="border-left:none">03</td>
-  <td class="xl121" style="border-left:none;border-right: 2pt solid windowtext;">04</td>
-  <td class="xl119" style="border-left:none">05</td>
-  <td class="xl120" style="border-left:none">06</td>
-  <td class="xl120" style="border-left:none">07</td>
-  <td class="xl121" style="border-right: 2pt solid windowtext;border-left:none;">08</td>
-  <td class="xl119" style="border-left:none">09</td>
-  <td class="xl99" style="border-left:none">10</td>
-  <td class="xl99" style="border-left:none">11</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">12</td>
-  <td class="xl98" style="border-left:none">13</td>
-  <td class="xl99" style="border-left:none">14</td>
-  <td class="xl99" style="border-left:none">15</td>
-  <td class="xl99" style="border-left:none">16</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">17</td>
-  <td class="xl101">18</td>
-  <td class="xl99" style="border-left:none">19</td>
-  <td class="xl99" style="border-left:none">20</td>
-  <td class="xl102" style="border-right: 2pt solid windowtext;border-left:none;">21</td>
-  <td class="xl98">22</td>
-  <td class="xl99" style="border-left:none">23</td>
-  <td class="xl99" style="border-left:none">24</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl101">26</td>
-  <td class="xl99" style="border-left:none">27</td>
-  <td class="xl99" style="border-left:none">28</td>
-  <td class="xl99" style="border-left:none">29</td>
-  <td class="xl102" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl98">31</td>
-  <td class="xl99" style="border-left:none">32</td>
-  <td class="xl99" style="border-left:none">33</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">34</td>
-  <td class="xl101">35</td>
-  <td class="xl99" style="border-left:none">36</td>
-  <td class="xl99" style="border-left:none">37</td>
-  <td class="xl99" style="border-left:none">38</td>
-  <td class="xl102" style="border-right: 2pt solid windowtext;border-left:none;">39</td>
-  <td class="xl98">40</td>
-  <td class="xl99" style="border-left:none">41</td>
-  <td class="xl99" style="border-left:none">42</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">43</td>
-  <td class="xl101">44</td>
-  <td class="xl99" style="border-left:none">45</td>
-  <td class="xl99" style="border-left:none">46</td>
-  <td class="xl102" style="border-right: 2pt solid windowtext;border-left:none;">47</td>
-  <td class="xl98">48</td>
-  <td class="xl99" style="border-left:none">49</td>
-  <td class="xl99" style="border-left:none">50</td>
-  <td class="xl99" style="border-left:none">51</td>
-  <td class="xl100" style="border-left:none">52</td>
+  <?php $week = 0; ?>
+  <?php foreach ($calendars['table-2'][7] as $key => $date) : ?>
+  <?php $week++; ?>
+  <td class="xl99" style="border-left:none"><?=sprintf("%02d", $week)?></td>
+  <?php endforeach; ?>
   <td class="xl66" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">&nbsp;</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
-  <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № 2 (сед №
-  1; лил № 6; век № 21; юга № 505; год № 2018 от р.х.).</td>
+  <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № 2 (сед №*; лил № *; век № **; юга № ***; год № <?=$calendars['table-2']['year']?> от р.х.).</td>
   <td colspan="27" class="xl65" style="mso-ignore:colspan"></td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" colspan="54" class="xl65" style="height:14.1pt;mso-ignore:colspan"></td>
  </tr>
- <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
+
+
+
+
+
+
+ <tr height="18"<?php if($calendars['table-3']['year'] == $currentYear): ?>class="currentTable" <?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
   <td height="18" class="xl90" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">&nbsp;</td>
   <td class="xl106" style="border-left:none;border-right: 2pt solid windowtext;">→</td>
   <td colspan="4" class="xl149" style="
@@ -1217,496 +404,79 @@
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
-  <td class="xl87" style="border-top:none;border-bottom: 2pt solid windowtext;border-left:none;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl72"><font class="font6">07</font></td>
-  <td class="xl70" style="border-left:none">14</td>
-  <td class="xl70" style="border-left:none">21</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72"><font class="font6">04</font></td>
-  <td class="xl70" style="border-left:none">11</td>
-  <td class="xl70" style="border-left:none">18</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl72"><font class="font6">04</font></td>
-  <td class="xl70" style="border-left:none">11</td>
-  <td class="xl70" style="border-left:none">18</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-left:none"><font class="font6">08</font></td>
-  <td class="xl74">15</td>
-  <td class="xl68">22</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72"><font class="font6">06</font></td>
-  <td class="xl70" style="border-left:none">13</td>
-  <td class="xl70" style="border-left:none">20</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72"><font class="font6">03</font></td>
-  <td class="xl70" style="border-left:none">10</td>
-  <td class="xl70" style="border-left:none">17</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-left:none"><font class="font6">08</font></td>
-  <td class="xl74">15</td>
-  <td class="xl68">22</td>
-  <td class="xl75" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl75" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl70" style="border-left:none">23</td>
-  <td class="xl76" style="border-right: 2pt solid windowtext;border-top:none;border-bottom: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl75" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl75" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl108" style="border-left:none">23</td>
-  <td class="xl69" style="
-    border-right: 2pt solid windowtext;
-    border-left: 2pt solid windowtext;
-">пн</td>
+  <?php foreach ($calendars['table-3'][1] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
+  <td class="xl69" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">пн</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вт</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none">19</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none">19</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl80">16</td>
-  <td class="xl72">23</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl80">16</td>
-  <td class="xl72">23</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl80">13</td>
-  <td class="xl72">20</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-left:none">17</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl103" style="border-top:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-left:none">15</td>
-  <td class="xl80">22</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl80">19</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl80">17</td>
-  <td class="xl109">24</td>
-  <td class="xl77" style="
-    border-right: 2pt solid windowtext;
-    border-left: 2pt solid windowtext;
-">вт</td>
+  <?php foreach ($calendars['table-3'][2] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
+  <td class="xl77" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">ср</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl72" style="border-top:none;border-left:none">23</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">13</td>
-  <td class="xl72" style="border-top:none;border-left:none">20</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">13</td>
-  <td class="xl72" style="border-top:none;border-left:none">20</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl74">17</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none">19</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl74">17</td>
-  <td class="xl68">24</td>
-  <td class="xl78" style="border-top:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-left:none;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl109" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl104"><font class="font6">02</font></td>
-  <td class="xl70"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-top:none;border-left:none">25</td>
+  <?php foreach ($calendars['table-3'][3] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">ср</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-top:none;border-left:none">17</td>
-  <td class="xl72" style="border-top:none;border-left:none">24</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl80">18</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl72" style="border-top:none;border-left:none">23</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">13</td>
-  <td class="xl72" style="border-top:none;border-left:none">20</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl80">18</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl80">15</td>
-  <td class="xl72">22</td>
-  <td class="xl79" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl72" style="border-left:none">19</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl105" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none">10</td>
-  <td class="xl72" style="border-left:none">17</td>
-  <td class="xl80">24</td>
-  <td class="xl78" style="
-    border-right: 2pt solid windowtext;
-    border-bottom: 2pt solid windowtext;
-">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl80">21</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl80">19</td>
-  <td class="xl79">26</td>
+  <?php foreach ($calendars['table-3'][4] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">чт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">22</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl74">19</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-top:none;border-left:none">17</td>
-  <td class="xl72" style="border-top:none;border-left:none">24</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl74">19</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl105" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl82" style="border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-left:none">27</td>
+  <?php foreach ($calendars['table-3'][5] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-top:none;border-left: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">пт</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none">19</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">23</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl72" style="border-top:none;border-left:none">23</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl80">20</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl80">20</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl80">17</td>
-  <td class="xl72">24</td>
-  <td class="xl78" style="border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-left:none;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl72" style="border-left:none">21</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl105" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72">12</td>
-  <td class="xl72" style="border-left:none">19</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-left:none">16</td>
-  <td class="xl80">23</td>
-  <td class="xl78" style="
-    border-right: 2pt solid windowtext;
-    border-bottom: 2pt solid windowtext;
-">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl80">21</td>
-  <td class="xl79">28</td>
+  <?php foreach ($calendars['table-3'][6] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-right: 2pt solid windowtext;border-top:none;border-left:none;border-left: 2pt solid windowtext;">сб</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
-  <td class="xl84" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">13</td>
-  <td class="xl84" style="border-top:none;border-left:none">20</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl84" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">10</td>
-  <td class="xl84" style="border-top:none;border-left:none">17</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl84" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">10</td>
-  <td class="xl84" style="border-top:none;border-left:none">17</td>
-  <td class="xl84" style="border-top:none;border-left:none">24</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl84" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl74">21</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl84" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">12</td>
-  <td class="xl84" style="border-top:none;border-left:none">19</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl68"><font class="font6">02</font></td>
-  <td class="xl68" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">16</td>
-  <td class="xl84" style="border-top:none;border-left:none">23</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl84" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl74">21</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl84" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl97" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl84" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl110" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl112" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl84" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl68" style="border-left:none">17</td>
-  <td class="xl88" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">24</td>
-  <td class="xl113" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl84" style="border-top:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl82" style="border-left:none">29</td>
+  <?php foreach ($calendars['table-3'][7] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-right: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">вс</td>
  </tr>
- <tr height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
+ <tr height="18" data-year="<?=$calendars['table-3']['year']?>" <?php if($calendars['table-3']['year'] == $currentYear): ?> data-week-days="true"<?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
   <td height="18" class="xl90" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">&nbsp;</td>
-  <td class="xl119" style="border-left:none">01</td>
-  <td class="xl120" style="border-left:none">02</td>
-  <td class="xl120" style="border-left:none">03</td>
-  <td class="xl121" style="border-left:none;border-right: 2pt solid windowtext;">04</td>
-  <td class="xl119" style="border-left:none">05</td>
-  <td class="xl120" style="border-left:none">06</td>
-  <td class="xl120" style="border-left:none">07</td>
-  <td class="xl121" style="border-left:none;border-right: 2pt solid windowtext;">08</td>
-  <td class="xl119" style="border-left:none">09</td>
-  <td class="xl99" style="border-left:none">10</td>
-  <td class="xl99" style="border-left:none">11</td>
-  <td class="xl99" style="border-left:none">12</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">13</td>
-  <td class="xl98" style="border-left:none">14</td>
-  <td class="xl99" style="border-left:none">15</td>
-  <td class="xl99" style="border-left:none">16</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">17</td>
-  <td class="xl101">18</td>
-  <td class="xl99" style="border-left:none">19</td>
-  <td class="xl99" style="border-left:none">20</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">21</td>
-  <td class="xl98">22</td>
-  <td class="xl99" style="border-left:none">23</td>
-  <td class="xl99" style="border-left:none">24</td>
-  <td class="xl99" style="border-left:none">25</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl101">27</td>
-  <td class="xl99" style="border-left:none">28</td>
-  <td class="xl99" style="border-left:none">29</td>
-  <td class="xl102" style="border-right: 2pt solid windowtext;border-left:none;">30</td>
-  <td class="xl98">31</td>
-  <td class="xl99" style="border-left:none">32</td>
-  <td class="xl99" style="border-left:none">33</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">34</td>
-  <td class="xl101">35</td>
-  <td class="xl99" style="border-left:none">36</td>
-  <td class="xl99" style="border-left:none">37</td>
-  <td class="xl99" style="border-left:none">38</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">39</td>
-  <td class="xl98">40</td>
-  <td class="xl99" style="border-left:none">41</td>
-  <td class="xl99" style="border-left:none">42</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">43</td>
-  <td class="xl101">44</td>
-  <td class="xl99" style="border-left:none">45</td>
-  <td class="xl99" style="border-left:none">46</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">47</td>
-  <td class="xl98">48</td>
-  <td class="xl99" style="border-left:none">49</td>
-  <td class="xl99" style="border-left:none">50</td>
-  <td class="xl99" style="border-left:none">51</td>
-  <td class="xl100" style="border-left:none">52</td>
+  <?php $week = 0; ?>
+  <?php foreach ($calendars['table-3'][7] as $key => $date) : ?>
+  <?php $week++; ?>
+  <td class="xl99" style="border-left:none"><?=sprintf("%02d", $week)?></td>
+  <?php endforeach; ?>
   <td class="xl111" style="
     border-right: 2pt solid windowtext;
     border-left: 2pt solid windowtext;
 ">&nbsp;</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
-  <td colspan="27" height="18" class="xl152" style="height:14.1pt">Таблица № 3 (сед №
-  1; лил № 6; век № 21; юга № 505; год № 2019 от р.х.).</td>
+  <td colspan="27" height="18" class="xl152" style="height:14.1pt">Таблица № 3 (сед №*; лил № *; век № **; юга № ***; год № <?=$calendars['table-3']['year']?> от р.х.).</td>
   <td colspan="27" class="xl65" style="mso-ignore:colspan"></td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" colspan="54" class="xl65" style="height:14.1pt;mso-ignore:colspan"></td>
  </tr>
- <tr height="18" class="currentTable" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;" data-year="2020">
+
+
+
+
+
+
+ <tr height="18"<?php if($calendars['table-4']['year'] == $currentYear): ?>class="currentTable" <?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
   <td height="18" class="xl90" style="height:14.1pt;border-left: 2pt solid windowtext;">&nbsp;</td>
   <td class="xl115" style="
     border-right: 2pt solid windowtext;
@@ -1773,466 +543,66 @@
   ">дек</td>
   <td class="xl90" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">&nbsp;</td>
  </tr>
- <tr data-year="2020" data-week-day="1" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="1" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">пн</td>
-  <td class="xl94" style="border-top:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72"><font class="font6">06</font></td>
-  <td class="xl70" style="border-left:none">13</td>
-  <td class="xl70" style="border-left:none">20</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72"><font class="font6">03</font></td>
-  <td class="xl70" style="border-left:none">10</td>
-  <td class="xl70" style="border-left:none">17</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl70" data-year="2020" data-month="3" data-day="2">02</td>
-  <td class="xl70" style="border-left:none" data-year="2020" data-month="3" data-day="9"><font class="font6">09</font></td>
-  <td class="xl70" style="border-left:none">16</td>
-  <td class="xl70" style="border-left:none" data-year="2020" data-month="3" data-day="23">23</td>
-  <td class="xl71" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="30">30</td>
-  <td class="xl72"><font class="font6">06</font></td>
-  <td class="xl70" style="border-left:none">13</td>
-  <td class="xl70" style="border-left:none">20</td>
-  <td class="xl71" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl71" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl126" style="border-top:none;border-left:none">01</td>
-  <td class="xl72" style="border-left:none"><font class="font6">08</font></td>
-  <td class="xl74">15</td>
-  <td class="xl68">22</td>
-  <td class="xl107" style="border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72"><font class="font6">06</font></td>
-  <td class="xl70" style="border-left:none">13</td>
-  <td class="xl70" style="border-left:none">20</td>
-  <td class="xl107" style="border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72"><font class="font6">03</font></td>
-  <td class="xl70" style="border-left:none">10</td>
-  <td class="xl70" style="border-left:none">17</td>
-  <td class="xl70" style="border-left:none">24</td>
-  <td class="xl76" style="border-top:none;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;border-left:none;">31</td>
-  <td class="xl72"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl71" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72"><font class="font6">05</font></td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl68" style="border-left:none">19</td>
-  <td class="xl75" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl70" style="border-left:none">23</td>
-  <td class="xl85" style="border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl72"><font class="font6">07</font></td>
-  <td class="xl93" style="border-top:none;border-left:none">14</td>
-  <td class="xl94" style="border-top:none">21</td>
+  <?php foreach ($calendars['table-4'][1] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">пн</td>
  </tr>
- <tr data-year="2020" data-week-day="2" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="2" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77 c7" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вт</td>
-  <td class="xl86" style="
-    border-right: 2pt solid windowtext;
-    border-bottom: 2pt solid windowtext;
-">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl72 c7" style="border-top:none" data-year="2020" data-month="3" data-day="3">03</td>
-  <td class="xl72" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="10">10</td>
-  <td class="xl72" style="border-top:none;border-left:none">17</td>
-  <td class="xl72" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="24">24</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="31">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl80">19</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl128" style="border-top:none;border-left:none">02</td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl80">16</td>
-  <td class="xl72">23</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-left:none">15</td>
-  <td class="xl80">22</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl80">13</td>
-  <td class="xl72">20</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-left:none">17</td>
-  <td class="xl109" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">24</td>
-  <td class="xl103" style="border-top:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-left:none">15</td>
-  <td class="xl81">22</td>
+  <?php foreach ($calendars['table-4'][2] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77 c7" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вт</td>
  </tr>
- <tr data-year="2020" data-week-day="3" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="3" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl69" style="height:14.1pt;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">ср</td>
-  <td class="xl116" style="border-top:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none">19</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl72" style="border-top:none" data-year="2020" data-month="3" data-day="4">04</td>
-  <td class="xl68" style="border-left:none" data-year="2020" data-month="3" data-day="7">11</td>
-  <td class="xl72" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="18">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="25">25</td>
-  <td class="xl73" style="border-top:none;border-left:none" data-year="2020" data-month="4" data-day="1"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl128" style="border-top:none;border-left:none">03</td>
-  <td class="xl68" style="border-left:none">10</td>
-  <td class="xl74">17</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none">19</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl78" style="border-top:none;border-bottom: 2pt solid windowtext;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl68" style="border-left:none">21</td>
-  <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl104"><font class="font6">02</font></td>
-  <td class="xl70"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl95">23</td>
+  <?php foreach ($calendars['table-4'][3] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl69" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">ср</td>
  </tr>
- <tr data-year="2020" data-week-day="4" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="4" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">чт</td>
-  <td class="xl117"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl72" style="border-top:none;border-left:none">23</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">13</td>
-  <td class="xl72" style="border-top:none;border-left:none">20</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl72" style="border-top:none" data-year="2020" data-month="3" data-day="5">05</td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl72" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="19">19</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="26">26</td>
-  <td class="xl70" data-year="2020" data-month="4" data-day="2"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl72" style="border-top:none;border-left:none">23</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl80">21</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl128" style="border-top:none;border-left:none">04</td>
-  <td class="xl72" style="border-left:none">11</td>
-  <td class="xl80">18</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">16</td>
-  <td class="xl72" style="border-top:none;border-left:none">23</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">13</td>
-  <td class="xl72" style="border-top:none;border-left:none">20</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl80" style="border-top:none">10</td>
-  <td class="xl72">17</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl80">15</td>
-  <td class="xl72">22</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72" style="border-left:none">12</td>
-  <td class="xl72" style="border-left:none">19</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl105" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none">10</td>
-  <td class="xl72" style="border-left:none">17</td>
-  <td class="xl81">24</td>
+  <?php foreach ($calendars['table-4'][4] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>  
   <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">чт</td>
  </tr>
- <tr data-year="2020" data-week-day="5" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="5" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">пт</td>
-  <td class="xl118" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-top:none;border-left:none">17</td>
-  <td class="xl72" style="border-top:none;border-left:none">24</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none" data-year="2020" data-month="3" data-day="6">06</td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl72" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="20">20</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="27">27</td>
-  <td class="xl72" style="border-top:none" data-year="2020" data-month="4" data-day="3"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-top:none;border-left:none">17</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">24</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl128" style="border-top:none;border-left:none">05</td>
-  <td class="xl68" style="border-left:none">12</td>
-  <td class="xl74">19</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl72" style="border-top:none;border-left:none">17</td>
-  <td class="xl72" style="border-top:none;border-left:none">24</td>
-  <td class="xl78" style="border-top:none;border-left:none;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none">21</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl68" style="border-left:none">16</td>
-  <td class="xl68" style="border-left:none">23</td>
-  <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl72" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl105" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl89" style="border-top:none">25</td>
+  <?php foreach ($calendars['table-4'][5] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;border-left: 2pt solid windowtext;">пт</td>
  </tr>
- <tr data-year="2020" data-week-day="6" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="6" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl77 c8" style="height:14.1pt;border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
-  <td class="xl118" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl78 c8" data-year="2020" data-month="2" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;" data-day="29">29</td>
-  <td class="xl72" style="border-top:none" data-year="2020" data-month="3" data-day="7"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl72" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="21">21</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="28">28</td>
-  <td class="xl72" style="border-top:none" data-year="2020" data-month="4" data-day="4"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl70"><font class="font6">02</font></td>
-  <td class="xl70" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl72" style="border-left:none">16</td>
-  <td class="xl80">23</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl128" style="border-top:none;border-left:none">06</td>
-  <td class="xl72" style="border-left:none">13</td>
-  <td class="xl80">20</td>
-  <td class="xl79" style="
-    border-right: 2pt solid windowtext;
-">27</td>
-  <td class="xl72" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">11</td>
-  <td class="xl72" style="border-top:none;border-left:none">18</td>
-  <td class="xl79" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl73" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl72" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">15</td>
-  <td class="xl72" style="border-top:none;border-left:none">22</td>
-  <td class="xl79" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">29</td>
-  <td class="xl72" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl80">12</td>
-  <td class="xl72">19</td>
-  <td class="xl79" style="border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl72" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl72" style="border-top:none;border-left:none">10</td>
-  <td class="xl80">17</td>
-  <td class="xl72">24</td>
-  <td class="xl78" style="border-left:none;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl72" style="border-top:none"><font class="font6">07</font></td>
-  <td class="xl72" style="border-left:none">14</td>
-  <td class="xl72" style="border-left:none">21</td>
-  <td class="xl109" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">28</td>
-  <td class="xl105" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl72">12</td>
-  <td class="xl72" style="border-left:none">19</td>
-  <td class="xl81">26</td>
+  <?php foreach ($calendars['table-4'][6] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl77" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">сб</td>
  </tr>
- <tr data-year="2020" data-week-day="7" height="18" style="mso-height-source:userset;height:14.1pt">
+ <tr data-year="<?=$calendars['table-4']['year']?>" data-week-day="7" height="18" style="mso-height-source:userset;height:14.1pt">
   <td height="18" class="xl91" style="height:14.1pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;">вс</td>
-  <td class="xl83" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">12</td>
-  <td class="xl84" style="border-top:none;border-left:none">19</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl68"><font class="font6">02</font></td>
-  <td class="xl68" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">16</td>
-  <td class="xl88" style="border-top:none;border-right: 2pt solid windowtext;border-left:none;">23</td>
-  <td class="xl97" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="1">01</td>
-  <td class="xl84" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="8"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl84" style="border-top:none;border-left:none" data-year="2020" data-month="3" data-day="22">22</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;" data-year="2020" data-month="3" data-day="29">29</td>
-  <td class="xl84" style="border-top:none" data-year="2020" data-month="4" data-day="5"><font class="font6">05</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">12</td>
-  <td class="xl84" style="border-top:none;border-left:none">19</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl84" style="border-top:none"><font class="font6">03</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">10</td>
-  <td class="xl68" style="border-left:none">17</td>
-  <td class="xl84" style="border-top:none;border-left:none">24</td>
-  <td class="xl89" style="border-top:none;border-right: 2pt solid windowtext;">31</td>
-  <td class="xl127" style="border-left:none">07</td>
-  <td class="xl68" style="border-left:none">14</td>
-  <td class="xl74">21</td>
-  <td class="xl82" style="
-    border-right: 2pt solid windowtext;
-">28</td>
-  <td class="xl84" style="border-top:none"><font class="font6">05</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">12</td>
-  <td class="xl84" style="border-top:none;border-left:none">19</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">26</td>
-  <td class="xl68"><font class="font6">02</font></td>
-  <td class="xl68" style="border-left:none"><font class="font6">09</font></td>
-  <td class="xl84" style="border-top:none;border-left:none">16</td>
-  <td class="xl84" style="border-top:none;border-left:none">23</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl84" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68" style="border-left:none">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;">27</td>
-  <td class="xl84" style="border-top:none"><font class="font6">04</font></td>
-  <td class="xl68" style="border-left:none">11</td>
-  <td class="xl68" style="border-left:none">18</td>
-  <td class="xl88" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">25</td>
-  <td class="xl97" style="border-top:none;border-left:none"><font class="font6">01</font></td>
-  <td class="xl84" style="border-top:none;border-left:none"><font class="font6">08</font></td>
-  <td class="xl68" style="border-left:none">15</td>
-  <td class="xl68" style="border-left:none">22</td>
-  <td class="xl110" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;">29</td>
-  <td class="xl112" style="border-top:none"><font class="font6">06</font></td>
-  <td class="xl68">13</td>
-  <td class="xl68" style="border-left:none">20</td>
-  <td class="xl95">27</td>
+  <?php foreach ($calendars['table-4'][7] as $key => $date) : ?>
+  <td class="xl125" style="border-left:none" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>"><?=$date['day']?></td>
+  <?php endforeach; ?>
   <td class="xl91" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">вс</td>
  </tr>
- <tr data-year="2020" data-week-days="true" height="18" style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
+ <tr height="18" data-year="<?=$calendars['table-4']['year']?>" <?php if($calendars['table-4']['year'] == $currentYear): ?> data-week-days="true"<?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">
   <td height="18" class="xl90" style="height:14.1pt;border-left: 2pt solid windowtext;border-top:none;border-right: 2pt solid windowtext;">&nbsp;</td>
-  <td class="xl119" style="border-left:none">01</td>
-  <td class="xl120" style="border-left:none">02</td>
-  <td class="xl120" style="border-left:none">03</td>
-  <td class="xl122" style="border-left:none;border-right: 2pt solid windowtext;">04</td>
-  <td class="xl119">05</td>
-  <td class="xl120" style="border-left:none">06</td>
-  <td class="xl120" style="border-left:none">07</td>
-  <td class="xl121" style="border-left:none;border-right: 2pt solid windowtext;">08</td>
-  <td class="xl119 c8" style="border-left:none">09</td>
-  <td class="xl99 c7" style="border-left:none">10</td>
-  <td class="xl99" style="border-left:none">11</td>
-  <td class="xl99" style="border-left:none">12</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">13</td>
-  <td class="xl98" style="border-left:none">14</td>
-  <td class="xl99" style="border-left:none">15</td>
-  <td class="xl99" style="border-left:none">16</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">17</td>
-  <td class="xl101">18</td>
-  <td class="xl99" style="border-left:none">19</td>
-  <td class="xl99" style="border-left:none">20</td>
-  <td class="xl99" style="border-left:none">21</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">22</td>
-  <td class="xl98">23</td>
-  <td class="xl99" style="border-left:none">24</td>
-  <td class="xl99" style="border-left:none">25</td>
-  <td class="xl100" style="border-right: 2pt solid windowtext;border-left:none;">26</td>
-  <td class="xl101">27</td>
-  <td class="xl99" style="border-left:none">28</td>
-  <td class="xl99" style="border-left:none">29</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">30</td>
-  <td class="xl98">31</td>
-  <td class="xl99" style="border-left:none">32</td>
-  <td class="xl99" style="border-left:none">33</td>
-  <td class="xl99" style="border-left:none">34</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">35</td>
-  <td class="xl101">36</td>
-  <td class="xl99" style="border-left:none">37</td>
-  <td class="xl99" style="border-left:none">38</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">39</td>
-  <td class="xl98">40</td>
-  <td class="xl99" style="border-left:none">41</td>
-  <td class="xl99" style="border-left:none">42</td>
-  <td class="xl100" style="border-left:none;border-right: 2pt solid windowtext;">43</td>
-  <td class="xl101">44</td>
-  <td class="xl99" style="border-left:none">45</td>
-  <td class="xl99" style="border-left:none">46</td>
-  <td class="xl99" style="border-left:none">47</td>
-  <td class="xl102" style="border-left:none;border-right: 2pt solid windowtext;">48</td>
-  <td class="xl98">49</td>
-  <td class="xl99" style="border-left:none">50</td>
-  <td class="xl99" style="border-left:none">51</td>
-  <td class="xl100" style="border-left:none">52</td>
+  <?php $week = 0; ?>
+  <?php foreach ($calendars['table-4'][7] as $key => $date) : ?>
+  <?php $week++; ?>
+  <td class="xl99" style="border-left:none"><?=sprintf("%02d", $week)?></td>
+  <?php endforeach; ?>
   <td class="xl114" style="border-top:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">&nbsp;</td>
  </tr>
  <tr height="18" style="mso-height-source:userset;height:14.1pt">
-  <td colspan="27" height="18" class="xl152" style="height:14.1pt">Таблица № 4 (сед №
-  1; лил № 6; век № 21; юга № 505; год № 2020 от р.х.).</td>
+  <td colspan="27" height="18" class="xl152" style="height:14.1pt">Таблица № 4 (сед №*; лил № *; век № **; юга № ***; год № <?=$calendars['table-4']['year']?> от р.х.).</td>
   <td colspan="27" class="xl65" style="mso-ignore:colspan"></td>
  </tr>
  
@@ -2370,20 +740,24 @@
       return weeknum;
   };
 
-  var current = new Date();
-  var weeks = current.getWeek();
-  var week = current.getDay();
-  var month = current.getMonth() + 1;
-  var day = current.getDate();
+  var weeks = new Date().getWeek();
+  var week = new Date().getDay();
+  var year = new Date().getFullYear();
+  var month = new Date().getMonth() + 1;
+  var day = new Date().getDate();
 
-  $('td[data-year="2020"][data-month="'+month+'"][data-day="'+day+'"]').addClass('active');
+  var str = "" + month;
+  var pad = "00"
+  var ans = pad.substring(0, pad.length - str.length) + str
 
-  $('tr[data-year="2020"][data-week-days="true"] td').each(function() {
+  $('td[data-year="'+year+'"][data-month="'+ans+'"][data-day="'+day+'"]').addClass('active');
+
+  $('tr[data-year="'+year+'"][data-week-days="true"] td').each(function() {
     if($(this).html() == weeks) $(this).addClass('active'); 
   });
 
-  $('tr[data-year="2020"][data-week-day="'+week+'"] td:first-child').addClass('active'); 
-  $('tr[data-year="2020"][data-week-day="'+week+'"] td:last-child').addClass('active'); 
+  $('tr[data-year="'+year+'"][data-week-day="'+week+'"] td:first-child').addClass('active'); 
+  $('tr[data-year="'+year+'"][data-week-day="'+week+'"] td:last-child').addClass('active'); 
 
   function bannerActiveAnimation() {
     var color = [

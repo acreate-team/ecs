@@ -8,6 +8,7 @@
     use yii\web\Controller;
     
     use app\models\Page;
+    use app\models\CalendarGS;
 
     use frontend\assets\JUIAsset;
     use frontend\assets\CalendarListAsset;
@@ -163,10 +164,20 @@
             $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);     
 
             $page = false;
+            $gs = new CalendarGS;
+            $calendars = false;
+            $currentYear = date('Y');
+
+            if(!Yii::$app->request->get('y')) {
+            	$startYear = $currentYear - 3;
+            } else {
+            	$startYear = intval(Yii::$app->request->get('y'));
+            }
 
             if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
                 $this->view->title = 'ГКС';
                 $page = 'list/gs/gks';
+                $calendars = $gs->generateGKS($startYear);
             } elseif(Yii::$app->request->get('url') == 'gs-sheteanskaya') {
                 $this->view->title = 'ШКС';
                 $page = 'list/gs/shks';
@@ -181,7 +192,9 @@
             }
 
             return $this->render($page, [
-                'title' => $this->view->title                
+                'title' => $this->view->title,
+                'calendars' => $calendars,
+                'currentYear' => $currentYear,
             ]);
         }             
     }
