@@ -105,7 +105,7 @@
 }
 /* line 109, ../sass/calendar.system.scss */
 .calendar_system .item .bottom .left, .calendar_system .item .bottom .right {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 /* line 114, ../sass/calendar.system.scss */
 .calendar_system .item .wrap .row .right h5 {
@@ -168,42 +168,45 @@
   width: 18px;
   height: 18px;
   background: url("../images/close_box.png");
+  position: absolute;
+  right: 30px;
+  top: 21px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 179, ../sass/calendar.system.scss */
+/* line 182, ../sass/calendar.system.scss */
 .calendar_system .item .wrap .row .closeBox:hover {
   opacity: 0.85;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 187, ../sass/calendar.system.scss */
+/* line 190, ../sass/calendar.system.scss */
 .calendar_system .item .wrap .row li {
   list-style: none;
   padding-left: 20px;
 }
-/* line 191, ../sass/calendar.system.scss */
+/* line 194, ../sass/calendar.system.scss */
 .calendar_system .item .wrap .row li a {
   text-decoration: none;
   font-size: 15px;
   white-space: nowrap;
 }
-/* line 201, ../sass/calendar.system.scss */
+/* line 204, ../sass/calendar.system.scss */
 .calendar_system .select.format {
   position: relative;
   display: table;
   margin: auto;
   width: 100%;
 }
-/* line 208, ../sass/calendar.system.scss */
+/* line 211, ../sass/calendar.system.scss */
 .calendar_system .select.sections {
   position: relative;
   float: right;
   width: 46%;
 }
-/* line 214, ../sass/calendar.system.scss */
+/* line 217, ../sass/calendar.system.scss */
 .calendar_system .select .box {
   display: none;
   position: absolute;
@@ -216,47 +219,52 @@
   border-radius: 5px;
   height: 190px;
 }
-/* line 226, ../sass/calendar.system.scss */
+/* line 229, ../sass/calendar.system.scss */
 .calendar_system .select .box.scrolled {
   height: auto;
 }
-/* line 229, ../sass/calendar.system.scss */
+/* line 232, ../sass/calendar.system.scss */
 .calendar_system .select .box.scrolled .left, .calendar_system .select .box.scrolled .right {
   padding-top: 0px;
 }
-/* line 233, ../sass/calendar.system.scss */
+/* line 236, ../sass/calendar.system.scss */
 .calendar_system .select .box.scrolled .right {
   padding-right: 40px;
 }
-/* line 237, ../sass/calendar.system.scss */
+/* line 240, ../sass/calendar.system.scss */
 .calendar_system .select .box.scrolled .top {
   position: absolute;
   right: 25px;
 }
 /* line 244, ../sass/calendar.system.scss */
+.calendar_system .select .box.scrolled .top .closeBox {
+  top: 0;
+  right: 0;
+}
+/* line 252, ../sass/calendar.system.scss */
 .calendar_system .select.sections .box {
   background: #00B0F0;
 }
-/* line 249, ../sass/calendar.system.scss */
+/* line 257, ../sass/calendar.system.scss */
 .calendar_system .select .box a {
   color: #fff;
 }
-/* line 253, ../sass/calendar.system.scss */
+/* line 261, ../sass/calendar.system.scss */
 .calendar_system .select .box .top span {
   font-size: 25px;
   font-weight: 500;
 }
-/* line 259, ../sass/calendar.system.scss */
+/* line 267, ../sass/calendar.system.scss */
 .calendar_system .select.format li a:hover {
   text-decoration: underline;
 }
-/* line 263, ../sass/calendar.system.scss */
+/* line 271, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul {
   display: flex;
   align-items: space-between;
   margin-top: 28px;
 }
-/* line 268, ../sass/calendar.system.scss */
+/* line 276, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li {
   list-style: none;
   flex: 0 1 33%;
@@ -266,7 +274,7 @@
   font-size: 18px;
   padding-left: 0 !important;
 }
-/* line 277, ../sass/calendar.system.scss */
+/* line 285, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li a {
   padding-top: 60px;
   display: table;
@@ -276,21 +284,21 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 286, ../sass/calendar.system.scss */
+/* line 294, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li a:hover {
   transform: scale(1.1);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 293, ../sass/calendar.system.scss */
+/* line 301, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li a:before {
   content: '';
   position: absolute;
   top: 5px;
   left: 50%;
 }
-/* line 301, ../sass/calendar.system.scss */
+/* line 309, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li:nth-child(1) a:before {
   background: url("../images/history.svg");
   width: 50px;
@@ -298,7 +306,7 @@
   background-size: 50px 50px;
   margin-left: -25px;
 }
-/* line 309, ../sass/calendar.system.scss */
+/* line 317, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li:nth-child(2) a:before {
   background: url("../images/structure.svg");
   width: 50px;
@@ -306,7 +314,7 @@
   background-size: 50px 50px;
   margin-left: -25px;
 }
-/* line 317, ../sass/calendar.system.scss */
+/* line 325, ../sass/calendar.system.scss */
 .calendar_system .select.sections ul li:nth-child(3) a:before {
   background: url("../images/actual.svg");
   width: 50px;
@@ -314,35 +322,35 @@
   background-size: 50px 50px;
   margin-left: -25px;
 }
-/* line 327, ../sass/calendar.system.scss */
+/* line 335, ../sass/calendar.system.scss */
 .calendar_system .select .left, .calendar_system .select .right {
   vertical-align: top !important;
 }
-/* line 332, ../sass/calendar.system.scss */
+/* line 340, ../sass/calendar.system.scss */
 .calendar_system .wrapList, .calendar_system .item .wrap, .calendar_system .wrapList .item {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 338, ../sass/calendar.system.scss */
+/* line 346, ../sass/calendar.system.scss */
 .calendar_system .wrapList {
   padding-right: 56px;
   padding-left: 56px;
 }
-/* line 343, ../sass/calendar.system.scss */
+/* line 351, ../sass/calendar.system.scss */
 .calendar_system .textContent p {
   padding-bottom: 20px;
 }
 
-/* line 349, ../sass/calendar.system.scss */
+/* line 357, ../sass/calendar.system.scss */
 .calendar_content_system p {
   padding-bottom: 15px;
 }
-/* line 352, ../sass/calendar.system.scss */
+/* line 360, ../sass/calendar.system.scss */
 .calendar_content_system p:last-child {
   padding-bottom: 0;
 }
-/* line 357, ../sass/calendar.system.scss */
+/* line 365, ../sass/calendar.system.scss */
 .calendar_content_system .wrapList {
   width: 65%;
   display: table;
@@ -355,20 +363,20 @@
   -ms-hyphens: auto;
   hyphens: auto;
 }
-/* line 370, ../sass/calendar.system.scss */
+/* line 378, ../sass/calendar.system.scss */
 .calendar_content_system.calendar_text .wrapList {
   padding-right: 35px;
   min-height: 350px;
 }
 
-/* line 377, ../sass/calendar.system.scss */
+/* line 385, ../sass/calendar.system.scss */
 .menu_kot {
   cursor: pointer;
   -webkit-transition: opacity 0.25s;
   -o-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
-/* line 383, ../sass/calendar.system.scss */
+/* line 391, ../sass/calendar.system.scss */
 .menu_kot:hover {
   opacity: 0.8;
   -webkit-transition: opacity 0.15s;
@@ -376,20 +384,20 @@
   transition: opacity 0.15s;
 }
 
-/* line 392, ../sass/calendar.system.scss */
+/* line 400, ../sass/calendar.system.scss */
 .sections_kot.select.format {
   position: relative;
   display: table;
   margin: auto;
   width: 100%;
 }
-/* line 399, ../sass/calendar.system.scss */
+/* line 407, ../sass/calendar.system.scss */
 .sections_kot.select.sections {
   position: relative;
   float: right;
   width: 65%;
 }
-/* line 405, ../sass/calendar.system.scss */
+/* line 413, ../sass/calendar.system.scss */
 .sections_kot.select .box {
   display: none;
   position: absolute;
@@ -404,61 +412,64 @@
   border-radius: 5px;
   height: 190px;
 }
-/* line 421, ../sass/calendar.system.scss */
+/* line 429, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box {
   background: #00B0F0;
 }
-/* line 424, ../sass/calendar.system.scss */
+/* line 432, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box a {
   color: #fff;
 }
-/* line 428, ../sass/calendar.system.scss */
+/* line 436, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box span {
   font-size: 25px;
   font-weight: 500;
   font-size: 19px;
   padding-bottom: 8px;
 }
-/* line 435, ../sass/calendar.system.scss */
+/* line 443, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box .closeBox {
   display: block;
   float: right;
   width: 18px;
   height: 18px;
+  position: absolute;
+  right: 30px;
+  top: 21px;
   background: url("../images/close_box.png");
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 445, ../sass/calendar.system.scss */
+/* line 457, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box .closeBox:hover {
   opacity: 0.85;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 453, ../sass/calendar.system.scss */
+/* line 465, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box li {
   list-style: none;
   padding-left: 20px;
 }
-/* line 457, ../sass/calendar.system.scss */
+/* line 469, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box li a {
   text-decoration: none;
   font-size: 15px;
   font-weight: normal;
 }
-/* line 465, ../sass/calendar.system.scss */
+/* line 477, ../sass/calendar.system.scss */
 .sections_kot.select.sections.format .box li a:hover {
   text-decoration: underline;
 }
-/* line 469, ../sass/calendar.system.scss */
+/* line 481, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul {
   display: flex;
   align-items: space-between;
   margin-top: 28px;
 }
-/* line 474, ../sass/calendar.system.scss */
+/* line 486, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li {
   list-style: none;
   flex: 0 1 33%;
@@ -468,7 +479,7 @@
   font-size: 18px;
   padding-left: 0 !important;
 }
-/* line 483, ../sass/calendar.system.scss */
+/* line 495, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li a {
   padding-top: 60px;
   display: table;
@@ -478,21 +489,21 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 492, ../sass/calendar.system.scss */
+/* line 504, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li a:hover {
   transform: scale(1.1);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 499, ../sass/calendar.system.scss */
+/* line 511, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li a:before {
   content: '';
   position: absolute;
   top: 5px;
   left: 50%;
 }
-/* line 507, ../sass/calendar.system.scss */
+/* line 519, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li:nth-child(1) a:before {
   background: url("../images/history.svg");
   width: 50px;
@@ -500,7 +511,7 @@
   background-size: 50px 50px;
   margin-left: -25px;
 }
-/* line 515, ../sass/calendar.system.scss */
+/* line 527, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li:nth-child(2) a:before {
   background: url("../images/structure.svg");
   width: 50px;
@@ -508,7 +519,7 @@
   background-size: 50px 50px;
   margin-left: -25px;
 }
-/* line 523, ../sass/calendar.system.scss */
+/* line 535, ../sass/calendar.system.scss */
 .sections_kot.select.sections .box ul li:nth-child(3) a:before {
   background: url("../images/actual.svg");
   width: 50px;

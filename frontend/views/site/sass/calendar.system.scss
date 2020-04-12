@@ -107,7 +107,7 @@
 
     .bottom {
       .left, .right {
-        padding-top: 30px;
+        padding-top: 20px;
       }
     }
 
@@ -172,6 +172,9 @@
         width: 18px;
         height: 18px;
         background: url('../images/close_box.png');
+        position: absolute;
+        right: 30px;
+        top: 21px;        
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
@@ -237,6 +240,11 @@
         .top {
           position: absolute;
           right: 25px;
+
+          .closeBox {
+            top: 0;
+            right: 0;
+          }
         }
       }
     }
@@ -437,10 +445,14 @@
         float: right;
         width: 18px;
         height: 18px;
+        position: absolute;
+        right: 30px;
+        top: 21px;        
         background: url('../images/close_box.png');
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
+
 
         &:hover {
           opacity: 0.85;

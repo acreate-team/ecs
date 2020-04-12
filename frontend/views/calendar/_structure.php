@@ -6,7 +6,7 @@
     </div>
 </div>
 
-<div id="content" class="calendar_list calendar_content_system calendar_content_text">
+<div id="content" class="calendar_list_system calendar_content_system calendar_content_text">
 	<div class="wrapList">
         <?=$page->content_structure?>
 	</div>
