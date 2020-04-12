@@ -168,10 +168,12 @@
             $calendars = false;
             $currentYear = date('Y');
 
-            if(!Yii::$app->request->get('y')) {
+            if(!Yii::$app->request->get('yga')) {
             	$startYear = $currentYear - 3;
+            	$yga = $startYear / 4;
             } else {
-            	$startYear = intval(Yii::$app->request->get('y'));
+            	$yga = str_replace('=', '', Yii::$app->request->get('yga'));
+            	$startYear = intval($yga) * 4 - 3;
             }
 
             if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
@@ -195,6 +197,7 @@
                 'title' => $this->view->title,
                 'calendars' => $calendars,
                 'currentYear' => $currentYear,
+                'yga' => $yga
             ]);
         }             
     }

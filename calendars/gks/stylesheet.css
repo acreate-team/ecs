@@ -1004,3 +1004,13 @@ td
 	border-left:none;
 	background:#92D050;
 	mso-pattern:black none;}
+
+
+.end-month {
+	border-right: 2pt solid windowtext; 
+	border-bottom: 2pt solid windowtext;
+}
+
+.end-month-right {
+	border-right: 2pt solid windowtext; 
+}

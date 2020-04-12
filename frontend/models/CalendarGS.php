@@ -15,11 +15,7 @@ class CalendarGS {
 		$startDayWeek = $startYearDate->format('N');
 		$startCalendarDate = $startYearDate;
 
-		if($startCalendarDate->format('d.m') != '01.01') {
-			for ($i=1; $i < $startDayWeek ; $i++) { 
-				$startCalendarDate->modify('-1 day');
-			}
-		} else {
+		for ($i=1; $i < $startDayWeek ; $i++) { 
 			$startCalendarDate->modify('-1 day');
 		}
 
@@ -33,6 +29,7 @@ class CalendarGS {
 			$data['table-1'][$week][$i] = [
 				'day' => $startCalendarDay->format('d'),
 				'month' => $month,
+				'week' => $week,
 				'daysInMonth' => cal_days_in_month(CAL_GREGORIAN, $month, $year),
 				'year' => $year,
 			];
@@ -52,6 +49,7 @@ class CalendarGS {
 				$data[$keyData][$week][$i] = [
 					'day' => $startCalendarDay->format('d'),
 					'month' => $month,
+					'week' => $week,
 					'daysInMonth' => cal_days_in_month(CAL_GREGORIAN, $month, $year),
 					'year' => $year,
 				];

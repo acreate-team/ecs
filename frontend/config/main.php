@@ -32,10 +32,15 @@ return [
                     'defaults' => ['id' => ''],
                 ],
                 [
+                    'pattern' => '/calendar/<url>/yga<yga>',
+                    'route' => 'calendar/view',
+                    'defaults' => ['url' => '', 'yga' => ''],
+                ],                
+                [
                     'pattern' => '/calendar/<url>',
                     'route' => 'calendar/view',
                     'defaults' => ['url' => ''],
-                ],
+                ],                
                 [
                     'pattern' => '/systems',
                     'route' => 'calendar/systems'
