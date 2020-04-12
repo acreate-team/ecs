@@ -813,7 +813,9 @@
 
     if(month == 1) {
       if($('td[data-next="true"][data-year="'+year+'"]').length) {
-        colspan--;
+        var yi = $('td[data-next="true"][data-year="'+year+'"]').index();
+        var ti = $('td[data-next="true"][data-year="'+year+'"]').closest('tr').index()+1;
+        if(!$('tr:eq('+ti+') td:eq('+yi+')').hasClass('end-month') && !$('tr:eq('+ti+') td:eq('+yi+')').hasClass('end-month-right')) colspan--;
       }
     }
 
