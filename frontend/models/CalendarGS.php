@@ -37,15 +37,29 @@ class CalendarGS {
 		}
 
 		$dayCount = 364;
-		$startCalendarDay = $startCalendarDate->modify('-1 day');
 		for ($t = 2; $t <= 4; $t++) {
-			if($t == 2) $startCalendarDay = $startCalendarDay->modify('+1 day');
 			$keyData = 'table-'.$t;
+			$data['startYear']++;
+
+			//if($data['startYear']) {
+				//$dayCount = 371;
+			//}
+
+			$startYearDate = date_create($data['startYear'].'-01-01');
+			$endYearDate = date_create($data['startYear'].'-12-31');
+			$startDayWeek = $startYearDate->format('N');
+			$startCalendarDate = $startYearDate;
+
+			for ($i=1; $i < $startDayWeek ; $i++) { 
+				$startCalendarDate->modify('-1 day');
+			}
+
+			$startCalendarDay = $startCalendarDate->modify('-1 day');
 			for ($i = 0; $i < $dayCount; $i++) {
 				$startCalendarDay = $startCalendarDay->modify('+1 day');
 				$week = $startCalendarDay->format('N');
 				$month = $startCalendarDay->format('m');
-				$year = $startCalendarDay->format('Y');				
+				$year = $startCalendarDay->format('Y');
 				$data[$keyData][$week][$i] = [
 					'day' => $startCalendarDay->format('d'),
 					'month' => $month,
@@ -56,6 +70,9 @@ class CalendarGS {
 				if($i == 55) $data[$keyData]['year'] = $startCalendarDay->format('Y');
 			}
 		}
+
+		//print_r($data);
+		//exit();
 
 		return $data;
 	}

@@ -170,7 +170,7 @@
 
             if(!Yii::$app->request->get('yga')) {
             	$startYear = $currentYear - 3;
-            	$yga = $startYear / 4;
+            	$yga = $currentYear / 4;
             } else {
             	$yga = str_replace('=', '', Yii::$app->request->get('yga'));
             	$startYear = intval($yga) * 4 - 3;
@@ -193,7 +193,34 @@
                 $this->redirect('/error');
             }
 
+            $weeks = [
+            	1 => 'пн',
+            	2 => 'вт',
+            	3 => 'ср',
+            	4 => 'чт',
+            	5 => 'пт',
+            	6 => 'сб',
+            	7 => 'вс'
+            ];
+
+            $month = [
+            	1 => 'янв',
+            	2 => 'фев',
+            	3 => 'мар',
+            	4 => 'апр',
+            	5 => 'маи',
+            	6 => 'июн',
+            	7 => 'июл',
+            	8 => 'авг',
+            	9 => 'сен',
+            	10 => 'окт',
+            	11 => 'ноя',
+            	12 => 'дек'
+            ];
+
             return $this->render($page, [
+            	'weeks' => $weeks,
+            	'month' => $month,
                 'title' => $this->view->title,
                 'calendars' => $calendars,
                 'currentYear' => $currentYear,
