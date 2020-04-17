@@ -12,7 +12,9 @@
     <div class="calendarWrap gks" style="margin-top: -1000000px">
       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;table-layout:fixed; margin: auto; min-width: 1450px;">
         <tbody>
-          <?php for ($tableNum=1; $tableNum <= 4; $tableNum++) : ?>
+          <?php $num = 4; ?>
+          <?php if($calendars['table-1']['year'] == 9997) $num = 3 ?>
+          <?php for ($tableNum=1; $tableNum <= $num; $tableNum++) : ?>
             <?php $tableID = 'table-'.$tableNum ?>
             <tr height="18" data-head="true" data-year="<?=$calendars[$tableID]['year']?>" <?php if($calendars[$tableID]['year'] == $currentYear): ?>class="currentTable" <?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-left: 2pt solid windowtext; border-top: 2pt solid windowtext; border-bottom: 2pt solid windowtext;">
             <td height="18" class="xl90" style="height:14.1pt;border-right: 2pt solid windowtext;border-top:none;" data-year="<?=$calendars[$tableID]['year']?>">&nbsp;</td>
@@ -44,7 +46,7 @@
               <?php $week = 0; ?>
               <?php foreach ($calendars[$tableID][7] as $key => $date) : ?>
               <?php $week++; ?>
-              <td data-weeks class="xl99" style="border-left:none"><?=sprintf("%02d", $week)?></td>
+              <td data-weeks class="xl99" style="border-left:none<?php if($week == 53): ?>;border-right: 2pt solid windowtext;<?php endif; ?>"><?=sprintf("%02d", $week)?></td>
               <?php endforeach; ?>
               <?php if($tableNum != 1): ?>
               <td class="xl111" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">&nbsp;</td>
@@ -52,7 +54,7 @@
             </tr>
 
             <tr height="18" style="mso-height-source:userset;height:14.1pt">
-              <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № <?=$tableNum?> (сед №*; лил № *; век № **; юга № ***; год № <?=$calendars[$tableID]['year']?> от р.х.).</td>
+              <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № <?=$tableNum?> (сед №<?=intval($calendars[$tableID]['sed'])?>; лил №<?=intval($calendars[$tableID]['lil'])?>; век №<?=intval($calendars[$tableID]['century'])?>; юга №<?=intval($yga)?>; год №<?=intval($calendars[$tableID]['year'])?> от р.х.).</td>
               <td colspan="27" class="xl65" style="mso-ignore:colspan"></td>
             </tr>
 

@@ -7,8 +7,8 @@ use Yii;
 class CalendarGS {
 	public function generateGKS($startYear) {
 		$data = [];
-		$data['startYear'] = $startYear;
-		$data['endStartYear'] = $startYear + 1;
+		$data['startYear'] = sprintf("%04d", $startYear);
+		$data['endStartYear'] = sprintf("%04d", $startYear + 1);
 
 		$startYearDate = date_create($data['startYear'].'-01-01');
 		$endYearDate = date_create($data['startYear'].'-12-31');
@@ -33,13 +33,18 @@ class CalendarGS {
 				'daysInMonth' => cal_days_in_month(CAL_GREGORIAN, $month, $year),
 				'year' => $year,
 			];
-			if($i == 55) $data['table-1']['year'] = $startCalendarDay->format('Y');
+			if($i == 55) {
+				$data['table-1']['year'] = $startCalendarDay->format('Y');
+				$data['table-1']['century'] = ceil($startCalendarDay->format('Y') / 100);
+			}
 		}
 
 		$dayCount = 364;
 		for ($t = 2; $t <= 4; $t++) {
 			$keyData = 'table-'.$t;
 			$data['startYear']++;
+
+			$data['startYear'] = sprintf("%04d", $data['startYear']);
 
 			//if($data['startYear']) {
 				//$dayCount = 371;
@@ -67,7 +72,12 @@ class CalendarGS {
 					'daysInMonth' => cal_days_in_month(CAL_GREGORIAN, $month, $year),
 					'year' => $year,
 				];
-				if($i == 55) $data[$keyData]['year'] = $startCalendarDay->format('Y');
+				if($i == 55) {
+					$data[$keyData]['year'] = $startCalendarDay->format('Y');
+					$data[$keyData]['century'] = ceil($startCalendarDay->format('Y') / 100);
+					$data[$keyData]['lil'] = ceil($startCalendarDay->format('Y') / 400);
+					$data[$keyData]['sed'] = ceil($startCalendarDay->format('Y') / 22400);
+				}
 			}
 		}
 
