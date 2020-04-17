@@ -36,6 +36,8 @@ class CalendarGS {
 			if($i == 55) {
 				$data['table-1']['year'] = $startCalendarDay->format('Y');
 				$data['table-1']['century'] = ceil($startCalendarDay->format('Y') / 100);
+				$data['table-1']['lil'] = ceil($startCalendarDay->format('Y') / 400);
+				$data['table-1']['sed'] = ceil($startCalendarDay->format('Y') / 22400);				
 			}
 		}
 
