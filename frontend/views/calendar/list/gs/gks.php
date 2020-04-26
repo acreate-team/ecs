@@ -6,14 +6,18 @@
     </div>
 </div>
 
-<div id="content" class="calendar">
+<div id="content" class="calendar" data-yga="<?=$yga?>">
   <div class="wrap">
   <link type="text/css" rel="stylesheet" href="/calendars/gks/stylesheet.css"/>
-    <div class="calendarWrap gks" style="margin-top: -1000000px">
+    <div class="loadingCalendar" style="text-align: center; padding-top: 40px; padding-bottom: 40px; font-size: 20px;">
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+      <p style="display: inline-block;">Загрузка, пожалуйста подождите...</p>
+    </div>
+    <div class="calendarWrap gks" style="margin-top: -1000000px; display: none">
+      <?php if(!empty($calendars)) : ?>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;table-layout:fixed; margin: auto; min-width: 1450px;">
         <tbody>
           <?php $num = 4; ?>
-          <?php if($calendars['table-1']['year'] == 9997) $num = 3 ?>
           <?php for ($tableNum=1; $tableNum <= $num; $tableNum++) : ?>
             <?php $tableID = 'table-'.$tableNum ?>
             <tr height="18" data-head="true" data-year="<?=$calendars[$tableID]['year']?>" <?php if($calendars[$tableID]['year'] == $currentYear): ?>class="currentTable" <?php endif; ?>style="mso-height-source:userset;height:14.1pt;border-left: 2pt solid windowtext; border-top: 2pt solid windowtext; border-bottom: 2pt solid windowtext;">
@@ -54,7 +58,7 @@
             </tr>
 
             <tr height="18" style="mso-height-source:userset;height:14.1pt">
-              <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № <?=$tableNum?> (сед №<?=intval($calendars[$tableID]['sed'])?>; лил №<?=intval($calendars[$tableID]['lil'])?>; век №<?=intval($calendars[$tableID]['century'])?>; юга №<?=intval($yga)?>; год №<?=intval($calendars[$tableID]['year'])?> от р.х.).</td>
+              <td colspan="27" height="18" class="xl148" style="height:14.1pt">Таблица № <?=$tableNum?> (сед № <?=intval($calendars[$tableID]['sed'])?>; лил № <?=intval($calendars[$tableID]['lil'])?>; век № <?=intval($calendars[$tableID]['century'])?>; юга № <?=intval($yga)?>; год № <?=intval($calendars[$tableID]['year'])?> от р.х.).</td>
               <td colspan="27" class="xl65" style="mso-ignore:colspan"></td>
             </tr>
 
@@ -64,6 +68,7 @@
           <?php endfor; ?>
         </tbody>
       </table>
+      <?php endif; ?>
     </div>
   </div>
 </div>
@@ -81,3 +86,42 @@
   $this->registerJsFile('/frontend/views/calendar/list/gs/js/gks.js');
 
 ?>
+
+<style>
+.lds-ring {
+  display: inline-block;
+  vertical-align: -14px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  border: 4px solid #002060;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #002060 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}  
+</style>

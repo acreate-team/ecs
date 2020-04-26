@@ -179,7 +179,9 @@
             if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
                 $this->view->title = 'ГКС';
                 $page = 'list/gs/gks';
-                $calendars = $gs->generateGKS($startYear);
+                if(Yii::$app->request->get('year')) {
+                    $calendars = $gs->generateGKS(Yii::$app->request->get('year'), Yii::$app->request->get('startWeekDay'));
+                }
             } elseif(Yii::$app->request->get('url') == 'gs-sheteanskaya') {
                 $this->view->title = 'ШКС';
                 $page = 'list/gs/shks';
