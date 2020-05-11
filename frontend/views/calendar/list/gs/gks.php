@@ -25,7 +25,7 @@
             <?php for ($i=1; $i <= 12; $i++) : ?>
             <td colspan="1" data-month="<?=$i?>" data-head="true" data-year="<?=$calendars[$tableID]['year']?>" class="xl149" style="border-right: 2pt solid black;border-left:none;"><?=$month[$i]?></td>
             <?php endfor; ?>
-            <?php if($tableNum != 1): ?>
+            <?php if($calendars[$tableID]['weeks'] == 52): ?>
               <td class="xl90" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">&nbsp;</td>
             <?php endif; ?>
             </tr>
@@ -39,9 +39,11 @@
               <?php $countI++; ?>
               <td class="xl125<?php if($date['day'] == $date['daysInMonth']) :?> end-month<?php endif; ?>" style="border-left:none;<?php if($countTR == $countI): ?> border-right: 2pt solid black;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>" data-week-day="<?=$date['week']?>" data-year="<?=$date['year']?>"><?=$date['day']?></td>
               <?php endforeach; ?>
-              <?php if($tableNum != 1): ?>
+
+              <?php if($calendars[$tableID]['weeks'] == 52): ?>
                 <td class="xl77" style="border-left:none;border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;"><?=$weeks[$date['week']]?></td>
               <?php endif; ?>            
+
             </tr>
             <?php endfor; ?>
 
@@ -52,7 +54,7 @@
               <?php $week++; ?>
               <td data-weeks class="xl99" style="border-left:none<?php if($week == 53): ?>;border-right: 2pt solid windowtext;<?php endif; ?>"><?=sprintf("%02d", $week)?></td>
               <?php endforeach; ?>
-              <?php if($tableNum != 1): ?>
+              <?php if($calendars[$tableID]['weeks'] == 52): ?>
               <td class="xl111" style="border-right: 2pt solid windowtext;border-left: 2pt solid windowtext;">&nbsp;</td>
               <?php endif; ?>
             </tr>

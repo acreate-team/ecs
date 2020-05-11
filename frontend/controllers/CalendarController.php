@@ -169,19 +169,15 @@
             $currentYear = date('Y');
 
             if(!Yii::$app->request->get('yga')) {
-            	$startYear = $currentYear - 3;
             	$yga = $currentYear / 4;
             } else {
-            	$yga = str_replace('=', '', Yii::$app->request->get('yga'));
-            	$startYear = intval($yga) * 4 - 3;
+            	$yga = Yii::$app->request->get('yga');
             }
 
             if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
                 $this->view->title = 'ГКС';
                 $page = 'list/gs/gks';
-                if(Yii::$app->request->get('year')) {
-                    $calendars = $gs->generateGKS(Yii::$app->request->get('year'), Yii::$app->request->get('startWeekDay'));
-                }
+                $calendars = $gs->generateGKS($yga);
             } elseif(Yii::$app->request->get('url') == 'gs-sheteanskaya') {
                 $this->view->title = 'ШКС';
                 $page = 'list/gs/shks';

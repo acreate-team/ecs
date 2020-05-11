@@ -1,33 +1,3 @@
-  //table generate
-  var mtend = [31,28,31,30,31,30,31,31,30,31,30,31];
-
-  function getDateInfo(year) {
-    var y = year;
-    var m = 0;
-    var d = 1;
-    var hlpr = mtend[m];
-    if (d < mtend[m] + 1) {
-      if(m == 1 && y % 4 == 0) { hlpr++; }
-      var c = new Date(y,m,d);
-      var dayOfWeek = c.getDay();
-      if(y < 100) dayOfWeek--;
-      
-      //console.log(c);
-      //console.log(days[dayOfWeek]);
-      return dayOfWeek;
-    }
-  }
-
-  var yga = $('.calendar').data('yga');
-  var year = (yga * 4) - 3;
-  var startWeekDay = getDateInfo(year);
-
-  $.get('?action=get&year='+year+'&startWeekDay='+startWeekDay, function(data) {
-    var tmp = $('<div></div>').html(data);
-    $('.calendarWrap').html(tmp.find('.calendarWrap').html());
-    initGKS();
-    console.log(data);
-  });
 
   //func
   function bannerActiveAnimation() {
@@ -69,12 +39,6 @@
   }
 
   function initGKS() {
-    if($('.currentTable').length) {
-      setTimeout(function() {
-        $('html, body').animate({scrollTop:$('.currentTable').offset().top}, '1');
-      }, 1000);
-    }    
-
     $('.loadingCalendar').remove();
 
     var match = ['false'];
@@ -231,5 +195,13 @@
 
   //load callback
   $(window).load(function() {
+    if($('.currentTable').length) {
+      setTimeout(function() {
+        $('html, body').animate({scrollTop:$('.currentTable').offset().top}, '1');
+      }, 1000);
+    }    
+
     $('.calendarWrap').css('margin-top', 0);
+
+    initGKS();
   });
