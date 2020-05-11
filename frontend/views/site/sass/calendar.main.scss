@@ -96,6 +96,56 @@
   .center {
     text-align: center;
     padding-top: 21px;
+
+    &.format {
+      .selectFormat {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 47px;
+        left: 50%;
+        width: 40%;
+        margin-left: -20%;
+
+        .selectFormatWrap {
+          background: #fff;
+          border-radius: 15px 15px 0 0;
+          padding: 40px;
+          width: 100%;
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+          position: relative;
+
+          li {
+            padding-bottom: 10px;
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+
+          a {
+            font-size: 18px;
+          }
+
+          &:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border: 40px solid transparent;
+            border-top-color: #fff;
+            border-bottom: 0;
+            bottom: -10px;
+            position: absolute;
+            left: 50%;
+            margin-left: -40px;              
+          }          
+        }
+      }
+
+      &.active .selectFormat {
+        display: block;
+      }
+    }
   }    
 
   .logo a {
@@ -198,5 +248,32 @@
 
   &.c9:before {
     border: 3px #000000 solid;
+  }
+}
+
+.vs-list {
+  display: table;
+  width: 80%;
+  margin: auto;
+
+  li {
+    list-style: none;
+    float: left;
+    width: 12.5%;
+
+    a {
+      display: block;
+      text-align: center;
+      background: #f7f7f7;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 3px;
+      margin: 2px;
+
+      &:hover {
+        background: #002060;
+        color: #fff;
+      }
+    }
   }
 }

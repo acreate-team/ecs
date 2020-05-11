@@ -78,7 +78,15 @@
 <div id="footerCalendar">
     <div class="container">
         <div class="left toList"><a href="/list"><img src="/uploads/systems/1-w.png" width="35"></a></div>
-        <div class="center format"><span>Формат&nbsp;&nbsp;&nbsp;системы&nbsp;&nbsp;&nbsp;горизонтальный</span></div>
+        <div class="center format">
+          <div class="selectFormat">
+            <ul class="selectFormatWrap">
+              <li><a href="/calendar/<?=str_replace('gs-', 'vs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы вертикальный</a></li>
+              <li><a href="/calendar/<?=str_replace('gs-', 'ds-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы диагональный</a></li>
+            </ul>
+          </div>
+          <span>Формат&nbsp;&nbsp;&nbsp;системы&nbsp;&nbsp;&nbsp;горизонтальный</span>
+        </div>
         <div class="right logo"><a href="/" class="itemContext"></a></div>
     </div>
 </div>
@@ -88,42 +96,3 @@
   $this->registerJsFile('/frontend/views/calendar/list/gs/js/gks.js');
 
 ?>
-
-<style>
-.lds-ring {
-  display: inline-block;
-  vertical-align: -14px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  margin: 8px;
-  border: 4px solid #002060;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #002060 transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}  
-</style>

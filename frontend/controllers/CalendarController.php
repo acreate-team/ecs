@@ -8,7 +8,7 @@
     use yii\web\Controller;
     
     use app\models\Page;
-    use app\models\CalendarGS;
+    use app\models\CalendarGKS;
 
     use frontend\assets\JUIAsset;
     use frontend\assets\CalendarListAsset;
@@ -164,7 +164,6 @@
             $this->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('app.description')]);     
 
             $page = false;
-            $gs = new CalendarGS;
             $calendars = false;
             $currentYear = date('Y');
 
@@ -174,14 +173,38 @@
             	$yga = Yii::$app->request->get('yga');
             }
 
+            if(Yii::$app->request->get('lil')) {
+                $yga = Yii::$app->request->get('lil') * 100;
+            }
+
+            if(Yii::$app->request->get('url') == 'ds-grigorianskaya') {
+                $action = 'ds';
+                $gks = new CalendarGKS;
+                $this->view->title = 'ГКС';
+                $page = 'list/ds/gks';
+                $calendars = $gks->generateDS($yga);
+            }
+
+            if(Yii::$app->request->get('url') == 'vs-grigorianskaya') {
+                $sed = 1;
+                if(Yii::$app->request->get('sed')) $sed = intval(Yii::$app->request->get('sed'));
+                $action = 'vs';
+                $this->view->title = 'ГКС';
+                $page = 'list/vs/gks';
+            }
+
             if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
+                $action = 'gs';
+                $gks = new CalendarGKS;
                 $this->view->title = 'ГКС';
                 $page = 'list/gs/gks';
-                $calendars = $gs->generateGKS($yga);
+                $calendars = $gks->generateGS($yga);
             } elseif(Yii::$app->request->get('url') == 'gs-sheteanskaya') {
+                $action = 'gs';
                 $this->view->title = 'ШКС';
                 $page = 'list/gs/shks';
             } elseif(Yii::$app->request->get('url') == 'gs-moiseanskaya') {
+                $action = 'gs';
                 $this->view->title = 'МКС';
                 $page = 'list/gs/mks';             
             }
@@ -216,13 +239,29 @@
             	12 => 'дек'
             ];
 
-            return $this->render($page, [
-            	'weeks' => $weeks,
-            	'month' => $month,
-                'title' => $this->view->title,
-                'calendars' => $calendars,
-                'currentYear' => $currentYear,
-                'yga' => $yga
-            ]);
+            if($action == 'ds') {
+                $lil = ceil($yga / 100);
+
+                return $this->render($page, [
+                    'weeks' => $weeks,
+                    'title' => $this->view->title,
+                    'calendars' => $calendars,
+                    'lil' => $lil
+                ]);
+            } else if($action == 'gs') {
+                return $this->render($page, [
+                	'weeks' => $weeks,
+                	'month' => $month,
+                    'title' => $this->view->title,
+                    'calendars' => $calendars,
+                    'currentYear' => $currentYear,
+                    'yga' => $yga
+                ]);
+            } else if($action == 'vs') {
+                return $this->render($page, [
+                    'title' => $this->view->title,
+                    'sed' => $sed,
+                ]);
+            }
         }             
     }

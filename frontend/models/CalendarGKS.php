@@ -4,10 +4,10 @@ namespace app\models;
 
 use Yii;
 
-class CalendarGS {
+class CalendarGKS {
 	protected $days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31];
 
-	public function generateGKS($yga) {
+	public function generateGS($yga) {
 		$data = [];
 		
 		if($yga != 1) $startYear = ($yga * 4) - 3;
@@ -199,13 +199,33 @@ class CalendarGS {
 			}
 
 			if($startMonth == 2) {
-				$data['table-4'][$startWeekDay][$i] = [
-					'day' => $startDay,
-					'month' => $startMonth,
-					'week' => $startWeekDay,
-					'daysInMonth' => $this->days_in_month[$startMonth-1]+1,
-					'year' => $yearData,
-				];
+				if($yearData == 22400) {
+					$data['table-4'][$startWeekDay][$i] = [
+						'day' => $startDay,
+						'month' => $startMonth,
+						'week' => $startWeekDay,
+						'daysInMonth' => $this->days_in_month[$startMonth-1],
+						'year' => $yearData,
+					];
+				} else {
+					if(is_int($yearData / 100) && !is_int($yearData / 400)) {
+						$data['table-4'][$startWeekDay][$i] = [
+							'day' => $startDay,
+							'month' => $startMonth,
+							'week' => $startWeekDay,
+							'daysInMonth' => $this->days_in_month[$startMonth-1],
+							'year' => $yearData,
+						];
+					} else {
+						$data['table-4'][$startWeekDay][$i] = [
+							'day' => $startDay,
+							'month' => $startMonth,
+							'week' => $startWeekDay,
+							'daysInMonth' => $this->days_in_month[$startMonth-1]+1,
+							'year' => $yearData,
+						];
+					}
+				}
 			} else {
 				$data['table-4'][$startWeekDay][$i] = [
 					'day' => $startDay,
@@ -243,6 +263,179 @@ class CalendarGS {
 		$data['table-4']['weeks'] = 53;
 		if($yearData == 22400) {
 			$data['table-4']['weeks'] = 52;
+		}
+
+		return $data;
+	}
+
+	public function generateDS($yga) {
+		$data = [];
+
+		if($yga == 100) $yga = 1;
+
+		$sed = ceil($yga * 4 / 100);
+		$lil = ceil($yga / 100);
+		$ygaStart = ($lil - 1) * 100 + 1;
+
+		$data['century'] = ceil($ygaStart * 4 / 100);
+		$data['sed'] = ceil(($yga * 4) / 22400);
+		$data['lil'] = $lil;
+		$data['yga'] = $ygaStart;
+
+		$yearStart = $ygaStart * 4 - 3;
+		$data['year'] = $yearStart;
+		$startWeekDay = 1;
+		$dayTotalCount = 0;
+
+		if($lil > 1) $dayTotalCount = 146097 * ($lil - 1);
+
+		$yearStart--;
+
+		for($m = 1; $m <= 25; $m++) {
+			for($i = 1; $i <= 4; $i++) {
+				if($i != 4) $dayCount = 365;
+				else $dayCount = 366;
+
+				if($m == 25) {
+					$dayCount = 365;
+				}
+
+				$dayTotalCount += $dayCount;
+
+				if($startWeekDay > 7) {
+					$startWeekDay = $startWeekDay - 7;
+				}
+
+				$data['lil-1'][] = [
+					'yga' => $ygaStart,
+					'year' => $yearStart + $i,
+					'dayCount' => $dayCount,
+					'weekDay' => $startWeekDay,
+					'dayTotalCount' => $dayTotalCount,
+				];
+
+				$startWeekDay++;
+
+				if($i == 4) {
+					$yearStart = $yearStart + $i;
+					$startWeekDay++;
+					$ygaStart++;
+				}
+			}
+		}
+
+		$startWeekDay--;
+
+		for($m = 1; $m <= 25; $m++) {
+			for($i = 1; $i <= 4; $i++) {
+				if($i != 4) $dayCount = 365;
+				else $dayCount = 366;
+
+				if($m == 25) {
+					$dayCount = 365;
+				}
+
+				$dayTotalCount += $dayCount;
+
+				if($startWeekDay > 7) {
+					$startWeekDay = $startWeekDay - 7;
+				}
+
+				$data['lil-2'][] = [
+					'yga' => $ygaStart,
+					'year' => $yearStart + $i,
+					'dayCount' => $dayCount,
+					'weekDay' => $startWeekDay,
+					'dayTotalCount' => $dayTotalCount,
+				];
+
+				$startWeekDay++;
+
+				if($i == 4) {
+					$yearStart = $yearStart + $i;
+					$startWeekDay++;
+					$ygaStart++;
+				}
+			}
+		}
+
+		$startWeekDay--;
+
+		for($m = 1; $m <= 25; $m++) {
+			for($i = 1; $i <= 4; $i++) {
+				if($i != 4) $dayCount = 365;
+				else $dayCount = 366;
+
+				if($m == 25) {
+					$dayCount = 365;
+				}
+
+				$dayTotalCount += $dayCount;
+
+				if($startWeekDay > 7) {
+					$startWeekDay = $startWeekDay - 7;
+				}
+
+				$data['lil-3'][] = [
+					'yga' => $ygaStart,
+					'year' => $yearStart + $i,
+					'dayCount' => $dayCount,
+					'weekDay' => $startWeekDay,
+					'dayTotalCount' => $dayTotalCount,
+				];
+
+				$startWeekDay++;
+
+				if($i == 4) {
+					$yearStart = $yearStart + $i;
+					$startWeekDay++;
+					$ygaStart++;
+				}
+			}
+		}
+
+		$startWeekDay--;
+
+		for($m = 1; $m <= 25; $m++) {
+			for($i = 1; $i <= 4; $i++) {
+				if($i != 4) $dayCount = 365;
+				else $dayCount = 366;
+
+				if($m == 25) {
+					$dayCount = 365;
+				}
+
+				if($m == 25 && $i == 4) {
+					$dayCount = 366;
+				}
+
+				$dayTotalCount += $dayCount;
+
+				if($startWeekDay > 7) {
+					$startWeekDay = $startWeekDay - 7;
+				}
+
+				if($yearStart + $i == 22400) {
+					$dayTotalCount -= 7;
+					$dayCount -= 7;
+				}
+
+				$data['lil-4'][] = [
+					'yga' => $ygaStart,
+					'year' => $yearStart + $i,
+					'dayCount' => $dayCount,
+					'weekDay' => $startWeekDay,
+					'dayTotalCount' => $dayTotalCount,
+				];
+
+				$startWeekDay++;
+
+				if($i == 4) {
+					$yearStart = $yearStart + $i;
+					$startWeekDay++;
+					$ygaStart++;
+				}
+			}
 		}
 
 		return $data;
@@ -299,5 +492,4 @@ class CalendarGS {
 
 		return $weekDay;
 	}
-
 }

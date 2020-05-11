@@ -35,7 +35,17 @@ return [
                     'pattern' => '/calendar/<url>/yga=<yga>',
                     'route' => 'calendar/view',
                     'defaults' => ['url' => '', 'yga' => ''],
-                ],                
+                ],    
+                [
+                    'pattern' => '/calendar/<url>/lil=<lil>',
+                    'route' => 'calendar/view',
+                    'defaults' => ['url' => '', 'lil' => ''],
+                ],         
+                [
+                    'pattern' => '/calendar/<url>/sed=<sed>',
+                    'route' => 'calendar/view',
+                    'defaults' => ['url' => '', 'sed' => ''],
+                ],                                                
                 [
                     'pattern' => '/calendar/<url>',
                     'route' => 'calendar/view',
