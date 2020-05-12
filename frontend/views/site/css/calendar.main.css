@@ -103,15 +103,17 @@
 }
 /* line 101, ../sass/calendar.main.scss */
 #footerCalendar .center.format .selectFormat {
-  display: none;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  transform: translateY(-20%) translateZ(0);
   padding-bottom: 47px;
   left: 50%;
   width: 40%;
   margin-left: -20%;
+  transition: all 0.5s;
+  opacity: 0;
 }
-/* line 110, ../sass/calendar.main.scss */
+/* line 112, ../sass/calendar.main.scss */
 #footerCalendar .center.format .selectFormat .selectFormatWrap {
   background: #fff;
   border-radius: 15px 15px 0 0;
@@ -120,19 +122,19 @@
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
   position: relative;
 }
-/* line 118, ../sass/calendar.main.scss */
+/* line 120, ../sass/calendar.main.scss */
 #footerCalendar .center.format .selectFormat .selectFormatWrap li {
   padding-bottom: 10px;
 }
-/* line 121, ../sass/calendar.main.scss */
+/* line 123, ../sass/calendar.main.scss */
 #footerCalendar .center.format .selectFormat .selectFormatWrap li:last-child {
   padding-bottom: 0;
 }
-/* line 126, ../sass/calendar.main.scss */
+/* line 128, ../sass/calendar.main.scss */
 #footerCalendar .center.format .selectFormat .selectFormatWrap a {
   font-size: 18px;
 }
-/* line 130, ../sass/calendar.main.scss */
+/* line 132, ../sass/calendar.main.scss */
 #footerCalendar .center.format .selectFormat .selectFormatWrap:before {
   content: '';
   width: 0;
@@ -145,11 +147,15 @@
   left: 50%;
   margin-left: -40px;
 }
-/* line 145, ../sass/calendar.main.scss */
+/* line 147, ../sass/calendar.main.scss */
 #footerCalendar .center.format.active .selectFormat {
   display: block;
+  bottom: 0;
+  transform: translateY(0%) translateZ(0);
+  opacity: 1;
+  transition: all 0.5s;
 }
-/* line 151, ../sass/calendar.main.scss */
+/* line 157, ../sass/calendar.main.scss */
 #footerCalendar .logo a {
   display: table;
   float: right;
@@ -160,7 +166,7 @@
   position: relative;
   top: 6.5px;
 }
-/* line 162, ../sass/calendar.main.scss */
+/* line 168, ../sass/calendar.main.scss */
 #footerCalendar .fullSize a {
   display: table;
   float: right;
@@ -171,12 +177,12 @@
   position: relative;
   top: 6.5px;
 }
-/* line 172, ../sass/calendar.main.scss */
+/* line 178, ../sass/calendar.main.scss */
 #footerCalendar .fullSize a.active {
   background: url("../images/minimize.png");
   background-size: 35px 35px;
 }
-/* line 178, ../sass/calendar.main.scss */
+/* line 184, ../sass/calendar.main.scss */
 #footerCalendar .top a {
   display: block;
   width: 35px;
@@ -187,17 +193,17 @@
   background-size: 35px 35px;
 }
 
-/* line 189, ../sass/calendar.main.scss */
+/* line 195, ../sass/calendar.main.scss */
 #headerCalendar .left, #footerCalendar .left {
   font-weight: bold;
 }
 
-/* line 193, ../sass/calendar.main.scss */
+/* line 199, ../sass/calendar.main.scss */
 .calendar_listWrap, .calendarWrap, .calendar_list_system .wrapList {
   padding: 35px;
 }
 
-/* line 197, ../sass/calendar.main.scss */
+/* line 203, ../sass/calendar.main.scss */
 .calendar td.active {
   box-shadow: inset 0 0 0 2.5px transparent;
   -webkit-transition: all 1s;
@@ -205,7 +211,7 @@
   transition: all 1s;
   position: relative;
 }
-/* line 204, ../sass/calendar.main.scss */
+/* line 210, ../sass/calendar.main.scss */
 .calendar td.active:before {
   content: '';
   position: absolute;
@@ -218,56 +224,56 @@
   -o-transition: border 5s;
   transition: border 5s;
 }
-/* line 217, ../sass/calendar.main.scss */
+/* line 223, ../sass/calendar.main.scss */
 .calendar td.active.c1:before {
   border: 3px #fff solid;
 }
-/* line 221, ../sass/calendar.main.scss */
+/* line 227, ../sass/calendar.main.scss */
 .calendar td.active.c2:before {
   border: 3px #CC0000 solid;
 }
-/* line 225, ../sass/calendar.main.scss */
+/* line 231, ../sass/calendar.main.scss */
 .calendar td.active.c3:before {
   border: 3px #FFC600 solid;
 }
-/* line 229, ../sass/calendar.main.scss */
+/* line 235, ../sass/calendar.main.scss */
 .calendar td.active.c4:before {
   border: 3px #FFFF00 solid;
 }
-/* line 233, ../sass/calendar.main.scss */
+/* line 239, ../sass/calendar.main.scss */
 .calendar td.active.c5:before {
   border: 3px #00B552 solid;
 }
-/* line 237, ../sass/calendar.main.scss */
+/* line 243, ../sass/calendar.main.scss */
 .calendar td.active.c6:before {
   border: 3px #00B5F7 solid;
 }
-/* line 241, ../sass/calendar.main.scss */
+/* line 247, ../sass/calendar.main.scss */
 .calendar td.active.c7:before {
   border: 3px #0073C6 solid;
 }
-/* line 245, ../sass/calendar.main.scss */
+/* line 251, ../sass/calendar.main.scss */
 .calendar td.active.c8:before {
   border: 3px #002163 solid;
 }
-/* line 249, ../sass/calendar.main.scss */
+/* line 255, ../sass/calendar.main.scss */
 .calendar td.active.c9:before {
   border: 3px #000000 solid;
 }
 
-/* line 254, ../sass/calendar.main.scss */
+/* line 260, ../sass/calendar.main.scss */
 .vs-list {
   display: table;
   width: 80%;
   margin: auto;
 }
-/* line 259, ../sass/calendar.main.scss */
+/* line 265, ../sass/calendar.main.scss */
 .vs-list li {
   list-style: none;
   float: left;
   width: 12.5%;
 }
-/* line 264, ../sass/calendar.main.scss */
+/* line 270, ../sass/calendar.main.scss */
 .vs-list li a {
   display: block;
   text-align: center;
@@ -277,7 +283,7 @@
   border-radius: 3px;
   margin: 2px;
 }
-/* line 273, ../sass/calendar.main.scss */
+/* line 279, ../sass/calendar.main.scss */
 .vs-list li a:hover {
   background: #002060;
   color: #fff;

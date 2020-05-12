@@ -38,9 +38,9 @@
                                     <div class="left">
                                         <span>от р.х.</span>
                                         <ul>
-                                            <li><a href="#">по вертикали</a></li>
-                                            <li><a href="#">по диагонали</a></li>
-                                            <li><a href="/calendar/gs-<?=$page->url?>">по горизонтали</a></li>
+                                            <li><a href="/calendar/fvs-<?=$page->url?>">по вертикали</a></li>
+                                            <li><a href="/calendar/fds-<?=$page->url?>">по диагонали</a></li>
+                                            <li><a href="/calendar/fgs-<?=$page->url?>">по горизонтали</a></li>
                                         </ul>
                                     </div>
                                     <div class="right">

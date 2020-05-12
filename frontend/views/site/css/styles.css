@@ -897,47 +897,17 @@ a:hover {
 }
 
 /* line 479, ../sass/main.scss */
-.lds-ring {
-  display: inline-block;
-  vertical-align: -14px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
-/* line 486, ../sass/main.scss */
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
+.loadingCalendar {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin: 8px;
-  border: 4px solid #002060;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #002060 transparent transparent transparent;
-}
-/* line 498, ../sass/main.scss */
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-/* line 502, ../sass/main.scss */
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-/* line 506, ../sass/main.scss */
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 5px;
+  background: #0042c5;
+  transition: width 0.5s;
 }
 
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @media (max-width: 1800px) {
   /* line 2, ../sass/_adaptive.scss */
   #header .logo .text {

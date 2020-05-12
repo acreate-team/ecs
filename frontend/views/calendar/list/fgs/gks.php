@@ -1,18 +1,15 @@
 <div id="headerCalendar">
     <div class="container">
-        <div class="left prev"><a href="/calendar/gs-grigorianskaya/yga=<?=$yga-1?>"></a></div>
+        <div class="left prev"><a href="/calendar/fgs-grigorianskaya/yga=<?=$yga-1?>"></a></div>
         <div class="center title"><span>КАЛЕНДАРНАЯ&nbsp;&nbsp;&nbsp;СИСТЕМА&nbsp;&nbsp;&nbsp;ГРИГОРИАНСКАЯ</span></div>
-        <div class="right next"><a href="/calendar/gs-grigorianskaya/yga=<?=$yga+1?>"></a></div>
+        <div class="right next"><a href="/calendar/fgs-grigorianskaya/yga=<?=$yga+1?>"></a></div>
     </div>
 </div>
 
 <div id="content" class="calendar" data-yga="<?=$yga?>">
   <div class="wrap">
   <link type="text/css" rel="stylesheet" href="/calendars/gks/stylesheet.css"/>
-    <div class="loadingCalendar" style="text-align: center; padding-top: 40px; padding-bottom: 40px; font-size: 20px;">
-      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-      <p style="display: inline-block;">Загрузка, пожалуйста подождите...</p>
-    </div>
+    <div class="loadingCalendar"></div>
     <div class="calendarWrap gks" style="margin-top: -1000000px; display: none">
       <?php if(!empty($calendars)) : ?>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;table-layout:fixed; margin: auto; min-width: 1450px;">
@@ -37,7 +34,7 @@
               <?php $countI = 0; ?>
               <?php foreach ($calendars[$tableID][$i] as $key => $date) : ?>
               <?php $countI++; ?>
-              <td class="xl125<?php if($date['day'] == $date['daysInMonth']) :?> end-month<?php endif; ?>" style="border-left:none;<?php if($countTR == $countI): ?> border-right: 2pt solid black;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>" data-week-day="<?=$date['week']?>" data-year="<?=$date['year']?>"><?=$date['day']?></td>
+              <td class="xl125<?php if($date['day'] == $date['daysInMonth']) :?> end-month<?php endif; ?>" style="border-left:none;<?php if($countTR == $countI): ?> border-right: 2pt solid black;<?php endif; ?>" data-year="<?=$date['year']?>" data-month="<?=$date['month']?>" data-day="<?=$date['day']?>" data-week-day="<?=$date['week']?>" data-year="<?=$date['year']?>"><?=sprintf("%02d", $date['day'])?></td>
               <?php endforeach; ?>
 
               <?php if($calendars[$tableID]['weeks'] == 52): ?>
@@ -81,8 +78,8 @@
         <div class="center format">
           <div class="selectFormat">
             <ul class="selectFormatWrap">
-              <li><a href="/calendar/<?=str_replace('gs-', 'vs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы вертикальный</a></li>
-              <li><a href="/calendar/<?=str_replace('gs-', 'ds-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы диагональный</a></li>
+              <li><a href="/calendar/<?=str_replace('fgs-', 'fvs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы вертикальный</a></li>
+              <li><a href="/calendar/<?=str_replace('fgs-', 'fds-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы диагональный</a></li>
             </ul>
           </div>
           <span>Формат&nbsp;&nbsp;&nbsp;системы&nbsp;&nbsp;&nbsp;горизонтальный</span>

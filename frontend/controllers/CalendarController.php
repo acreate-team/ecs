@@ -177,36 +177,36 @@
                 $yga = Yii::$app->request->get('lil') * 100;
             }
 
-            if(Yii::$app->request->get('url') == 'ds-grigorianskaya') {
-                $action = 'ds';
+            if(Yii::$app->request->get('url') == 'fds-grigorianskaya') {
+                $action = 'fds';
                 $gks = new CalendarGKS;
                 $this->view->title = 'ГКС';
-                $page = 'list/ds/gks';
+                $page = 'list/fds/gks';
                 $calendars = $gks->generateDS($yga);
             }
 
-            if(Yii::$app->request->get('url') == 'vs-grigorianskaya') {
+            if(Yii::$app->request->get('url') == 'fvs-grigorianskaya') {
                 $sed = 1;
                 if(Yii::$app->request->get('sed')) $sed = intval(Yii::$app->request->get('sed'));
-                $action = 'vs';
+                $action = 'fvs';
                 $this->view->title = 'ГКС';
-                $page = 'list/vs/gks';
+                $page = 'list/fvs/gks';
             }
 
-            if(Yii::$app->request->get('url') == 'gs-grigorianskaya') {
-                $action = 'gs';
+            if(Yii::$app->request->get('url') == 'fgs-grigorianskaya') {
+                $action = 'fgs';
                 $gks = new CalendarGKS;
                 $this->view->title = 'ГКС';
-                $page = 'list/gs/gks';
+                $page = 'list/fgs/gks';
                 $calendars = $gks->generateGS($yga);
-            } elseif(Yii::$app->request->get('url') == 'gs-sheteanskaya') {
-                $action = 'gs';
+            } elseif(Yii::$app->request->get('url') == 'fgs-sheteanskaya') {
+                $action = 'fgs';
                 $this->view->title = 'ШКС';
-                $page = 'list/gs/shks';
-            } elseif(Yii::$app->request->get('url') == 'gs-moiseanskaya') {
-                $action = 'gs';
+                $page = 'list/fgs/shks';
+            } elseif(Yii::$app->request->get('url') == 'fgs-moiseanskaya') {
+                $action = 'fgs';
                 $this->view->title = 'МКС';
-                $page = 'list/gs/mks';             
+                $page = 'list/fgs/mks';             
             }
 
             if(!$page) {
@@ -239,7 +239,7 @@
             	12 => 'дек'
             ];
 
-            if($action == 'ds') {
+            if($action == 'fds') {
                 $lil = ceil($yga / 100);
 
                 return $this->render($page, [
@@ -248,7 +248,7 @@
                     'calendars' => $calendars,
                     'lil' => $lil
                 ]);
-            } else if($action == 'gs') {
+            } else if($action == 'fgs') {
                 return $this->render($page, [
                 	'weeks' => $weeks,
                 	'month' => $month,
@@ -257,7 +257,7 @@
                     'currentYear' => $currentYear,
                     'yga' => $yga
                 ]);
-            } else if($action == 'vs') {
+            } else if($action == 'fvs') {
                 return $this->render($page, [
                     'title' => $this->view->title,
                     'sed' => $sed,

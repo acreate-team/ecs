@@ -181,10 +181,6 @@
     $('tr[data-year="'+year+'"][data-week="'+week+'"] td:first-child').addClass('active'); 
     $('td[data-year="'+year+'"][data-day="'+day+'"][data-month="'+month+'"]').addClass('active'); 
 
-
-    //show
-    $('.calendarWrap').show();
-
     //animation func
     bannerActiveAnimation();
 
@@ -194,6 +190,14 @@
   }
 
   //load callback
+  var w = 20;
+
+  setInterval(function() {
+    $('.loadingCalendar').css('width', w+'%');
+    w = w + 20;
+    if(w >= 100) w = 100;
+  }, 200);
+
   $(window).load(function() {
     if($('.currentTable').length) {
       setTimeout(function() {
@@ -201,7 +205,11 @@
       }, 1000);
     }    
 
-    $('.calendarWrap').css('margin-top', 0);
-
     initGKS();
+
+    $('.loadingCalendar').css('width', '100%');
+    setTimeout(function() {
+      $('.loadingCalendar').hide();
+      $('.calendarWrap').css('margin-top', 0).fadeIn();
+    }, 1001);
   });

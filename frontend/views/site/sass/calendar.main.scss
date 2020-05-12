@@ -99,13 +99,15 @@
 
     &.format {
       .selectFormat {
-        display: none;
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
+        transform: translateY(-20%) translateZ(0);
         padding-bottom: 47px;
         left: 50%;
         width: 40%;
         margin-left: -20%;
+        transition: all 0.5s;
+        opacity: 0;
 
         .selectFormatWrap {
           background: #fff;
@@ -144,6 +146,10 @@
 
       &.active .selectFormat {
         display: block;
+        bottom: 0;
+        transform: translateY(0%) translateZ(0);
+        opacity: 1;
+        transition: all 0.5s;
       }
     }
   }    

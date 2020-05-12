@@ -1,18 +1,15 @@
 <div id="headerCalendar">
     <div class="container">
-        <div class="left prev"><a href="/calendar/ds-grigorianskaya/lil=<?=$lil-1?>" <?php if($lil-1 == 0): ?> style="display: none"<?php endif; ?>></a></div>
+        <div class="left prev"><a href="/calendar/fds-grigorianskaya/lil=<?=$lil-1?>" <?php if($lil-1 == 0): ?> style="display: none"<?php endif; ?>></a></div>
         <div class="center title"><span>КАЛЕНДАРНАЯ&nbsp;&nbsp;&nbsp;СИСТЕМА&nbsp;&nbsp;&nbsp;ГРИГОРИАНСКАЯ</span></div>
-        <div class="right next"><a href="/calendar/ds-grigorianskaya/lil=<?=$lil+1?>"></a></div>
+        <div class="right next"><a href="/calendar/fds-grigorianskaya/lil=<?=$lil+1?>"></a></div>
     </div>
 </div>
 
 <div id="content" class="calendar" data-lil="<?=$lil?>">
   <div class="wrap">
     <link type="text/css" rel="stylesheet" href="/calendars/gks/stylesheet-ds.css"/>
-    <div class="loadingCalendar" style="text-align: center; padding-top: 40px; padding-bottom: 40px; font-size: 20px;">
-      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-      <p style="display: inline-block;">Загрузка, пожалуйста подождите...</p>
-    </div>
+    <div class="loadingCalendar"></div>
     <div class="calendarWrap gks" style="margin-top: -1000000px; display: none">    
 
 
@@ -34,22 +31,21 @@
  <col width="42" style="mso-width-source:userset;mso-width-alt:1536;width:32pt">
  </colgroup><tbody><tr height="154" style="height:115.5pt">
   <td height="154" class="xl80" width="34" style="height:115.5pt;width:26pt;border-top: 2pt solid windowtext;border-left: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">лил</td>
-  <td class="xl66" width="34" style="border-left:none;width:26pt;word-break: break-word;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">век № 2 = 36524
-  сут (эмболис)</td>
+  <td class="xl66" width="34" style="border-left:none;width:26pt;word-break: break-word;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">век</td>
   <td class="xl67" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">юга</td>
   <td class="xl68" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">год</td>
   <td class="xl68" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">инт</td>
   <td class="xl68" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">ден</td>
   <td class="xl68" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сут</td>
   <td class="xl68" width="49" style="border-left:none;width:37pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;border-right: 2pt solid windowtext;">сум</td>
-  <td class="xl69" width="34" style="width:26pt;word-break: break-word;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;border-right: 2pt solid windowtext;">век № 2 = 36524 сут (эмболис)</td>
+  <td class="xl69" width="34" style="width:26pt;word-break: break-word;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;border-right: 2pt solid windowtext;">век №</td>
   <td class="xl70" width="34" style="border-left:none;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">юга</td>
   <td class="xl71" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">год</td>
   <td class="xl71" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">инт</td>
   <td class="xl71" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">ден</td>
   <td class="xl71" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сут</td>
   <td class="xl71" width="49" style="border-left:none;width:37pt;border-right: 2pt solid windowtext;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сум</td>
-  <td class="xl72" width="34" style="width:26pt;word-break: break-word;border-right: 2pt solid windowtext;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">век № 2 = 36524 сут (эмболис)</td>
+  <td class="xl72" width="34" style="width:26pt;word-break: break-word;border-right: 2pt solid windowtext;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">век</td>
   <td class="xl73" width="34" style="width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">юга</td>
   <td class="xl74" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">год</td>
   <td class="xl74" width="34" style="border-left:none;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">инт</td>
@@ -91,7 +87,7 @@
  <tr height="20" style="height:15.0pt">
   <td height="20" class="xl81" style="height:15.0pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;"><?php if($i == 1): ?><?=$calendars['lil']?><?php endif; ?></td>
   <td class="xl82" style="border-left:none;border-right: 2pt solid windowtext;"><?php if($i == 1): ?><?=$calendars['century']?><?php endif; ?></td>
-  <td class="xl131" width="34" style="border-top:none;border-left:none;width:26pt"><a href="/calendar/gs-grigorianskaya/yga=<?=$calendars['lil-1'][$m]['yga']?>" target="_blank"><?=$calendars['lil-1'][$m]['yga']?></a></td>
+  <td class="xl131" width="34" style="border-top:none;border-left:none;width:26pt"><a href="/calendar/fgs-grigorianskaya/yga=<?=$calendars['lil-1'][$m]['yga']?>" target="_blank"><?=$calendars['lil-1'][$m]['yga']?></a></td>
   <td class="xl83" width="34" style="border-top:none;border-left:none;width:26pt"><?=$calendars['lil-1'][$m]['year']?></td>
   <td class="xl83" width="34" style="border-top:none;border-left:none;width:26pt"><?php if($calendars['lil-1'][$m]['dayCount'] == 365): ?>эмб<?php else: ?>вис<?php endif; ?></td>
   <td class="xl83" width="34" style="border-top:none;border-left:none;width:26pt"><?=$weeks[$calendars['lil-1'][$m]['weekDay']]?></td>
@@ -99,7 +95,7 @@
   <td class="xl83" width="49" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;width:37pt;"><?=$calendars['lil-1'][$m]['dayTotalCount']?></td>
 
   <td class="xl84" style="border-top:none;border-right: 2pt solid windowtext;"><?php if($i == 1): ?><?=$calendars['century']+1?><?php endif; ?></td>
-  <td class="xl132" width="34" style="border-left:none;width:26pt"><a href="/calendar/gs-grigorianskaya/yga=<?=$calendars['lil-2'][$m]['yga']?>" target="_blank"><?=$calendars['lil-2'][$m]['yga']?></a></td>
+  <td class="xl132" width="34" style="border-left:none;width:26pt"><a href="/calendar/fgs-grigorianskaya/yga=<?=$calendars['lil-2'][$m]['yga']?>" target="_blank"><?=$calendars['lil-2'][$m]['yga']?></a></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?=$calendars['lil-2'][$m]['year']?></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?php if($calendars['lil-2'][$m]['dayCount'] == 365): ?>эмб<?php else: ?>вис<?php endif; ?></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?=$weeks[$calendars['lil-2'][$m]['weekDay']]?></td>
@@ -107,7 +103,7 @@
   <td class="xl113" style="border-left:none;border-right: 2pt solid windowtext;"><?=$calendars['lil-2'][$m]['dayTotalCount']?></td>
 
   <td class="xl85" style="border-top:none;border-right: 2pt solid windowtext;"><?php if($i == 1): ?><?=$calendars['century']+2?><?php endif; ?></td>
-  <td class="xl134" width="34" style="width:26pt"><a href="/calendar/gs-grigorianskaya/yga=<?=$calendars['lil-3'][$m]['yga']?>" target="_blank"><?=$calendars['lil-3'][$m]['yga']?></a></td>
+  <td class="xl134" width="34" style="width:26pt"><a href="/calendar/fgs-grigorianskaya/yga=<?=$calendars['lil-3'][$m]['yga']?>" target="_blank"><?=$calendars['lil-3'][$m]['yga']?></a></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?=$calendars['lil-3'][$m]['year']?></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?php if($calendars['lil-3'][$m]['dayCount'] == 365): ?>эмб<?php else: ?>вис<?php endif; ?></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?=$weeks[$calendars['lil-3'][$m]['weekDay']]?></td>
@@ -115,7 +111,7 @@
   <td class="xl135" width="49" style="border-left:none;width:37pt;border-right: 2pt solid windowtext;"><?=$calendars['lil-3'][$m]['dayTotalCount']?></td>
 
   <td class="xl86" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;"><?php if($i == 1): ?><?=$calendars['century']+3?><?php endif; ?></td>
-  <td class="xl134" width="34" style="width:26pt"><a href="/calendar/gs-grigorianskaya/yga=<?=$calendars['lil-4'][$m]['yga']?>" target="_blank"><?=$calendars['lil-4'][$m]['yga']?></a></td>
+  <td class="xl134" width="34" style="width:26pt"><a href="/calendar/fgs-grigorianskaya/yga=<?=$calendars['lil-4'][$m]['yga']?>" target="_blank"><?=$calendars['lil-4'][$m]['yga']?></a></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?=$calendars['lil-4'][$m]['year']?></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?php if($calendars['lil-4'][$m]['dayCount'] == 365): ?>эмб<?php else: ?>вис<?php endif; ?></td>
   <td class="xl133" width="34" style="border-left:none;width:26pt"><?=$weeks[$calendars['lil-4'][$m]['weekDay']]?></td>
@@ -206,7 +202,7 @@
  <tr height="21" style="height:15.75pt">
   <td height="21" class="xl96" style="height:15.75pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-top:none;">
     <?php if($i == 1): ?>↓<?php endif; ?>
-    <?php if($i == 25): ?>1<?php endif; ?>
+    <?php if($i == 25): ?><?=$calendars['lil']?><?php endif; ?>
   </td>
   <td class="xl97" style="border-top:none;border-left:none;border-right: 2pt solid windowtext;"><?php if($i == 25): ?><?=$calendars['century']?><?php endif; ?></td>
   <td class="xl132" width="34" style="border-left:none;width:26pt;border-bottom: 2pt solid windowtext;">&nbsp;</td>
@@ -347,30 +343,28 @@
 
  <tr height="154" style="height:115.5pt">
   <td height="154" class="xl65" style="height:115.5pt;border-left: 2pt solid windowtext;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">лил</td>
-  <td class="xl119" width="34" style="border-left:none;word-break: break-word;width:26pt;border-top: 2pt solid windowtext;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">век № 2 = 36524
-  сут (эмболис)</td>
+  <td class="xl119" width="34" style="border-left:none;word-break: break-word;width:26pt;border-top: 2pt solid windowtext;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">век</td>
   <td class="xl120" width="34" style="border-top:none;border-left:none;border-bottom: 2pt solid windowtext;width:26pt;border-top: 2pt solid windowtext;">юга</td>
   <td class="xl121" width="34" style="border-top:none;border-left:none;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">год</td>
   <td class="xl121" width="34" style="border-top:none;border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">инт</td>
   <td class="xl121" width="34" style="border-top:none;border-left:none;border-top: 2pt solid windowtext;width:26pt;border-bottom: 2pt solid windowtext;">ден</td>
   <td class="xl121" width="34" style="border-top:none;border-top: 2pt solid windowtext;border-left:none;border-bottom: 2pt solid windowtext;width:26pt;">сут</td>
   <td class="xl121" width="49" style="border-top:none;border-left:none;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;width:37pt;">сум</td>
-  <td class="xl122" width="34" style="width:26pt;word-break: break-word;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">век № 2 = 36524 сут (эмболис)</td>
+  <td class="xl122" width="34" style="width:26pt;word-break: break-word;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;border-right: 2pt solid windowtext;">век</td>
   <td class="xl123" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">юга</td>
   <td class="xl124" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">год</td>
   <td class="xl124" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">инт</td>
   <td class="xl124" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">ден</td>
   <td class="xl124" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сут</td>
   <td class="xl166" style="border-left:none;border-top: 2pt solid windowtext;border-right: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сум</td>
-  <td class="xl167" width="34" style="width:26pt;word-break: break-word;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">век № 2 = 36524 сут (эмболис)</td>
+  <td class="xl167" width="34" style="width:26pt;word-break: break-word;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">век</td>
   <td class="xl125" width="34" style="width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">юга</td>
   <td class="xl126" width="34" style="border-left:none;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;width:26pt;">год</td>
   <td class="xl126" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">инт</td>
   <td class="xl126" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">ден</td>
   <td class="xl126" width="34" style="border-left:none;width:26pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сут</td>
   <td class="xl127" width="49" style="border-left:none;border-right: 2pt solid windowtext;width:37pt;border-top: 2pt solid windowtext;border-bottom: 2pt solid windowtext;">сум</td>
-  <td class="xl168" width="34" style="border-left:none;word-break: break-word;border-right: 2pt solid windowtext;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">век № 2 = 36524
-  сут (эмболис)</td>
+  <td class="xl168" width="34" style="border-left:none;word-break: break-word;border-right: 2pt solid windowtext;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">век
   <td class="xl128" width="34" style="width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">юга</td>
   <td class="xl129" width="34" style="border-left:none;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">год</td>
   <td class="xl129" width="34" style="border-left:none;width:26pt;border-bottom: 2pt solid windowtext;border-top: 2pt solid windowtext;">инт</td>
@@ -430,8 +424,8 @@
         <div class="center format">
           <div class="selectFormat">
             <ul class="selectFormatWrap">
-              <li><a href="/calendar/<?=str_replace('ds-', 'vs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы вертикальный</a></li>
-              <li><a href="/calendar/<?=str_replace('ds-', 'gs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы горизонтальный</a></li>
+              <li><a href="/calendar/<?=str_replace('fds-', 'fvs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы вертикальный</a></li>
+              <li><a href="/calendar/<?=str_replace('fds-', 'fgs-', Yii::$app->request->get('url')) ?><?php if(Yii::$app->request->get('yga')): ?>/yga=<?=Yii::$app->request->get('yga')?><?php endif; ?>">формат системы горизонтальный</a></li>
             </ul>
           </div>
           <span>Формат&nbsp;&nbsp;&nbsp;системы&nbsp;&nbsp;&nbsp;лилианский</span>
@@ -441,8 +435,19 @@
 </div>
 
 <script>
+  var w = 20;
+
+  setInterval(function() {
+    $('.loadingCalendar').css('width', w+'%');
+    w = w + 20;
+    if(w >= 100) w = 100;
+  }, 200);
+
   $(window).load(function() {
-    $('.loadingCalendar').remove();
-    $('.calendarWrap').css('margin-top', 0).show();
+    $('.loadingCalendar').stop().css('width', '100%');
+    setTimeout(function() {
+      $('.loadingCalendar').hide();
+      $('.calendarWrap').css('margin-top', 0).fadeIn();
+    }, 1001);
   });
 </script>

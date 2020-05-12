@@ -186,7 +186,7 @@ class CalendarGKS {
 		//t-4
 		$dayCount = 371;
 		if($yearData == 22399) {
-			$dayCount = 364;	
+			$dayCount = 364;
 		}
 
 		for ($i = 0; $i < $dayCount; $i++) {
@@ -204,7 +204,7 @@ class CalendarGKS {
 						'day' => $startDay,
 						'month' => $startMonth,
 						'week' => $startWeekDay,
-						'daysInMonth' => $this->days_in_month[$startMonth-1],
+						'daysInMonth' => 22,
 						'year' => $yearData,
 					];
 				} else {
@@ -241,6 +241,11 @@ class CalendarGKS {
 					$startDay = 0;
 					if($startMonth == 12) $startMonth = 1;
 					else $startMonth++;
+				} else {
+					if($startDay == 22 && $yearData == 22400) {
+						$startDay = 0;
+						$startMonth++;
+					}
 				}
 			} else {
 				if($startDay == $this->days_in_month[$startMonth-1]) {
@@ -261,6 +266,7 @@ class CalendarGKS {
 		$data['table-4']['lil'] = ceil($yearData / 400);
 		$data['table-4']['sed'] = ceil($yearData / 22400);
 		$data['table-4']['weeks'] = 53;
+
 		if($yearData == 22400) {
 			$data['table-4']['weeks'] = 52;
 		}
